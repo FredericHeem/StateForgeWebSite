@@ -1,0 +1,12 @@
+_UpgradeReport_Files
+Releases
+Report
+**/bin
+**/obj
+*.gallio
+**/*.suo
+**/*.log
+cv
+BingSiteAuth.xml
+google*.html
+y_key*.html

@@ -1,0 +1,1853 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" InitialTargets="Minify" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{785095F5-A378-4082-BD68-EF364944D168}</ProjectGuid>
+    <ProjectTypeGuids>{F85E285D-A4E0-4152-9332-AB1D724D3325};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>StateForgeWebSite</RootNamespace>
+    <AssemblyName>StateForgeWebSite</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\Deploy\DeployUninstallController.cs" />
+    <Compile Include="Controllers\Deploy\DeployInstallController.cs" />
+    <Compile Include="Controllers\HomeController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controllers\DeployController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BingSiteAuth.xml" />
+    <Content Include="Content\Buy.css" />
+    <Content Include="Content\css\doxygen.css" />
+    <Content Include="Content\css\nav_f.png" />
+    <Content Include="Content\css\nav_h.png" />
+    <Content Include="Content\css\tabs.css" />
+    <Content Include="Content\Help.css" />
+    <Content Include="Content\Download.css" />
+    <Content Include="Content\Features.css" />
+    <Content Include="Content\Images\Android-ico-16.png" />
+    <Content Include="Content\Images\Apple-grey-icon-16.png" />
+    <Content Include="Content\Images\Apple-grey-icon.png" />
+    <Content Include="Content\Images\ArrowButtonGreen.png" />
+    <Content Include="Content\Images\Asynchronous_32x32.png" />
+    <Content Include="Content\Images\bg-body.png" />
+    <Content Include="Content\Images\Build_32x32.png" />
+    <Content Include="Content\Images\Clock_32x32.png" />
+    <Content Include="Content\Images\ConcurrentStateMachine.png" />
+    <Content Include="Content\Images\Event_32x32.png" />
+    <Content Include="Content\Images\Eye_32x32.png" />
+    <Content Include="Content\Images\Fedora-icon.png" />
+    <Content Include="Content\Images\FsmML_32x32.png" />
+    <Content Include="Content\Images\github.png" />
+    <Content Include="Content\Images\GnuLogo.png" />
+    <Content Include="Content\Images\Header.png" />
+    <Content Include="Content\Images\HierarchicalStateMachine.png" />
+    <Content Include="Content\Images\Hierarchical_32x32.png" />
+    <Content Include="Content\Images\History_32x32.png" />
+    <Content Include="Content\Images\ico-osx.png" />
+    <Content Include="Content\Images\ico-tux.png" />
+    <Content Include="Content\Images\ico-win.png" />
+    <Content Include="Content\Images\IObserver.png" />
+    <Content Include="Content\Images\led-class-diagram-cpp.png" />
+    <Content Include="Content\Images\led-class-diagram-dotnet.png" />
+    <Content Include="Content\Images\led-class-diagram-java.png" />
+    <Content Include="Content\Images\led-state-diagram-cpp.png" />
+    <Content Include="Content\Images\led-state-diagram-dotnet.png" />
+    <Content Include="Content\Images\led-state-diagram-java.png" />
+    <Content Include="Content\Images\led-state-pattern-class-diagram.png" />
+    <Content Include="Content\Images\Linux-icon-16.png" />
+    <Content Include="Content\Images\Linux-icon.png" />
+    <Content Include="Content\Images\OnEntryExit_32x32.png" />
+    <Content Include="Content\Images\Parallel_32x32.png" />
+    <Content Include="Content\Images\Redhat-icon.png" />
+    <Content Include="Content\Images\StateBuilderCppPrinciplesLandscape.png" />
+    <Content Include="Content\Images\StateBuilderDotNetPrinciplesLandscape.png" />
+    <Content Include="Content\Images\StateBuilderDotNetPrinciplesLandscape.svg" />
+    <Content Include="Content\Images\StateBuilderJavaPrinciplesLandscape.png" />
+    <Content Include="Content\Images\StateBuilderJavaPrinciplesLandscape.svg" />
+    <Content Include="Content\Images\StateBuilderPrinciplesPortrait.png" />
+    <Content Include="Content\Images\StateDiagramEditor.PNG" />
+    <Content Include="Content\Images\StateForgeLogo.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Images\StateMachineTools.png" />
+    <Content Include="Content\Images\SynchronousAsynchronousContext.png" />
+    <Content Include="Content\Images\TestXmppChatStateMachine.png" />
+    <Content Include="Content\Images\Ubuntu-icon.png" />
+    <Content Include="Content\Images\vs2008icon.png" />
+    <Content Include="Content\Images\vs2010icon.png" />
+    <Content Include="Content\Images\Windows-icon-16.png" />
+    <Content Include="Content\Images\Windows-icon.png" />
+    <Content Include="Content\Images\XCodeIcon.png" />
+    <Content Include="Content\js\jcarousel\lib\jquery-1.4.2.min.js" />
+    <Content Include="Content\js\jcarousel\lib\jquery.jcarousel.js" />
+    <Content Include="Content\js\jcarousel\lib\jquery.jcarousel.min.js" />
+    <Content Include="Content\js\jcarousel\skins\ie7\credits.txt" />
+    <Content Include="Content\js\jcarousel\skins\ie7\loading-small.gif" />
+    <Content Include="Content\js\jcarousel\skins\ie7\loading.gif" />
+    <Content Include="Content\js\jcarousel\skins\ie7\loading_small.gif" />
+    <Content Include="Content\js\jcarousel\skins\ie7\next-horizontal.gif" />
+    <Content Include="Content\js\jcarousel\skins\ie7\prev-horizontal.gif" />
+    <Content Include="Content\js\jcarousel\skins\ie7\skin.css" />
+    <Content Include="Content\js\jcarousel\skins\tango\credits.txt" />
+    <Content Include="Content\js\jcarousel\skins\tango\next-horizontal.png" />
+    <Content Include="Content\js\jcarousel\skins\tango\next-vertical.png" />
+    <Content Include="Content\js\jcarousel\skins\tango\prev-horizontal.png" />
+    <Content Include="Content\js\jcarousel\skins\tango\prev-vertical.png" />
+    <Content Include="Content\js\jcarousel\skins\tango\skin.css" />
+    <Content Include="Content\js\jcarousel\style.css" />
+    <Content Include="Content\js\jquery-drill-down-menu-plugin\css\dcdrilldown.css" />
+    <Content Include="Content\js\jquery-drill-down-menu-plugin\css\skins\demo.css" />
+    <Content Include="Content\js\jquery-drill-down-menu-plugin\css\skins\grey.css" />
+    <Content Include="Content\js\jquery-drill-down-menu-plugin\css\skins\images\arrow_black.png" />
+    <Content Include="Content\js\jquery-drill-down-menu-plugin\css\skins\images\arrow_black_down.png" />
+    <Content Include="Content\js\jquery-drill-down-menu-plugin\css\skins\images\arrow_black_right.png" />
+    <Content Include="Content\js\jquery-drill-down-menu-plugin\css\skins\images\arrow_down_off.png" />
+    <Content Include="Content\js\jquery-drill-down-menu-plugin\css\skins\images\arrow_grey_right.png" />
+    <Content Include="Content\js\jquery-drill-down-menu-plugin\css\skins\images\arrow_red_left.png" />
+    <Content Include="Content\js\jquery-drill-down-menu-plugin\css\skins\images\arrow_red_right.png" />
+    <Content Include="Content\js\jquery-drill-down-menu-plugin\css\skins\images\arrow_right_off.png" />
+    <Content Include="Content\js\jquery-drill-down-menu-plugin\css\skins\images\arrow_white_left.png" />
+    <Content Include="Content\js\jquery-drill-down-menu-plugin\css\skins\images\arrow_white_right.png" />
+    <Content Include="Content\js\jquery-drill-down-menu-plugin\css\skins\images\bg_black.png" />
+    <Content Include="Content\js\jquery-drill-down-menu-plugin\css\skins\images\bg_black_on.png" />
+    <Content Include="Content\js\jquery-drill-down-menu-plugin\css\skins\images\bg_clean.png" />
+    <Content Include="Content\js\jquery-drill-down-menu-plugin\css\skins\images\bg_clean_on.png" />
+    <Content Include="Content\js\jquery-drill-down-menu-plugin\css\skins\images\bg_green_blue.png" />
+    <Content Include="Content\js\jquery-drill-down-menu-plugin\css\skins\images\bg_grey.png" />
+    <Content Include="Content\js\jquery-drill-down-menu-plugin\css\skins\images\bg_grey_on.png" />
+    <Content Include="Content\js\jquery-drill-down-menu-plugin\css\skins\images\bg_sub.png" />
+    <Content Include="Content\js\jquery-drill-down-menu-plugin\css\skins\images\checkers.png" />
+    <Content Include="Content\js\jquery-drill-down-menu-plugin\css\skins\images\icon_arrows.png" />
+    <Content Include="Content\js\jquery-drill-down-menu-plugin\index.html" />
+    <Content Include="Content\js\jquery-drill-down-menu-plugin\js\jquery.cookie.js" />
+    <Content Include="Content\js\jquery-drill-down-menu-plugin\js\jquery.dcdrilldown.1.2.js" />
+    <Content Include="Content\js\jquery-drill-down-menu-plugin\js\jquery.dcdrilldown.1.2.min.js" />
+    <Content Include="Content\js\jquery-ui\js\jquery-1.6.2.min.js" />
+    <Content Include="Content\js\jquery-ui\js\jquery-ui-1.8.16.custom.min.js" />
+    <Content Include="Content\js\jquery.fancybox-1.3.4\fancybox\blank.gif" />
+    <Content Include="Content\js\jquery.fancybox-1.3.4\fancybox\fancybox-x.png" />
+    <Content Include="Content\js\jquery.fancybox-1.3.4\fancybox\fancybox-y.png" />
+    <Content Include="Content\js\jquery.fancybox-1.3.4\fancybox\fancybox.png" />
+    <Content Include="Content\js\jquery.fancybox-1.3.4\fancybox\fancy_close.png" />
+    <Content Include="Content\js\jquery.fancybox-1.3.4\fancybox\fancy_loading.png" />
+    <Content Include="Content\js\jquery.fancybox-1.3.4\fancybox\fancy_nav_left.png" />
+    <Content Include="Content\js\jquery.fancybox-1.3.4\fancybox\fancy_nav_right.png" />
+    <Content Include="Content\js\jquery.fancybox-1.3.4\fancybox\fancy_shadow_e.png" />
+    <Content Include="Content\js\jquery.fancybox-1.3.4\fancybox\fancy_shadow_n.png" />
+    <Content Include="Content\js\jquery.fancybox-1.3.4\fancybox\fancy_shadow_ne.png" />
+    <Content Include="Content\js\jquery.fancybox-1.3.4\fancybox\fancy_shadow_nw.png" />
+    <Content Include="Content\js\jquery.fancybox-1.3.4\fancybox\fancy_shadow_s.png" />
+    <Content Include="Content\js\jquery.fancybox-1.3.4\fancybox\fancy_shadow_se.png" />
+    <Content Include="Content\js\jquery.fancybox-1.3.4\fancybox\fancy_shadow_sw.png" />
+    <Content Include="Content\js\jquery.fancybox-1.3.4\fancybox\fancy_shadow_w.png" />
+    <Content Include="Content\js\jquery.fancybox-1.3.4\fancybox\fancy_title_left.png" />
+    <Content Include="Content\js\jquery.fancybox-1.3.4\fancybox\fancy_title_main.png" />
+    <Content Include="Content\js\jquery.fancybox-1.3.4\fancybox\fancy_title_over.png" />
+    <Content Include="Content\js\jquery.fancybox-1.3.4\fancybox\fancy_title_right.png" />
+    <Content Include="Content\js\jquery.fancybox-1.3.4\fancybox\jquery.easing-1.3.pack.js" />
+    <Content Include="Content\js\jquery.fancybox-1.3.4\fancybox\jquery.fancybox-1.3.4.css" />
+    <Content Include="Content\js\jquery.fancybox-1.3.4\fancybox\jquery.fancybox-1.3.4.js" />
+    <Content Include="Content\js\jquery.fancybox-1.3.4\fancybox\jquery.fancybox-1.3.4.pack.js" />
+    <Content Include="Content\js\jquery.fancybox-1.3.4\fancybox\jquery.mousewheel-3.0.4.pack.js" />
+    <Content Include="Content\js\jquery\jquery-1.6.1.min.js" />
+    <Content Include="Content\js\qtip\jquery.qtip.min.css" />
+    <Content Include="Content\js\qtip\jquery.qtip.min.js" />
+    <Content Include="Content\js\syntaxhighlighter\scripts\shAutoloader.js" />
+    <Content Include="Content\js\syntaxhighlighter\scripts\shBrushAppleScript.js" />
+    <Content Include="Content\js\syntaxhighlighter\scripts\shBrushAS3.js" />
+    <Content Include="Content\js\syntaxhighlighter\scripts\shBrushBash.js" />
+    <Content Include="Content\js\syntaxhighlighter\scripts\shBrushColdFusion.js" />
+    <Content Include="Content\js\syntaxhighlighter\scripts\shBrushCpp.js" />
+    <Content Include="Content\js\syntaxhighlighter\scripts\shBrushCSharp.js" />
+    <Content Include="Content\js\syntaxhighlighter\scripts\shBrushCss.js" />
+    <Content Include="Content\js\syntaxhighlighter\scripts\shBrushDelphi.js" />
+    <Content Include="Content\js\syntaxhighlighter\scripts\shBrushDiff.js" />
+    <Content Include="Content\js\syntaxhighlighter\scripts\shBrushErlang.js" />
+    <Content Include="Content\js\syntaxhighlighter\scripts\shBrushGroovy.js" />
+    <Content Include="Content\js\syntaxhighlighter\scripts\shBrushJava.js" />
+    <Content Include="Content\js\syntaxhighlighter\scripts\shBrushJavaFX.js" />
+    <Content Include="Content\js\syntaxhighlighter\scripts\shBrushJScript.js" />
+    <Content Include="Content\js\syntaxhighlighter\scripts\shBrushPerl.js" />
+    <Content Include="Content\js\syntaxhighlighter\scripts\shBrushPhp.js" />
+    <Content Include="Content\js\syntaxhighlighter\scripts\shBrushPlain.js" />
+    <Content Include="Content\js\syntaxhighlighter\scripts\shBrushPowerShell.js" />
+    <Content Include="Content\js\syntaxhighlighter\scripts\shBrushPython.js" />
+    <Content Include="Content\js\syntaxhighlighter\scripts\shBrushRuby.js" />
+    <Content Include="Content\js\syntaxhighlighter\scripts\shBrushSass.js" />
+    <Content Include="Content\js\syntaxhighlighter\scripts\shBrushScala.js" />
+    <Content Include="Content\js\syntaxhighlighter\scripts\shBrushSql.js" />
+    <Content Include="Content\js\syntaxhighlighter\scripts\shBrushVb.js" />
+    <Content Include="Content\js\syntaxhighlighter\scripts\shBrushXml.js" />
+    <Content Include="Content\js\syntaxhighlighter\scripts\shCore.js" />
+    <Content Include="Content\js\syntaxhighlighter\scripts\shLegacy.js" />
+    <Content Include="Content\js\syntaxhighlighter\src\shAutoloader.js" />
+    <Content Include="Content\js\syntaxhighlighter\src\shCore.js" />
+    <Content Include="Content\js\syntaxhighlighter\src\shLegacy.js" />
+    <Content Include="Content\js\syntaxhighlighter\styles\shCore.css" />
+    <Content Include="Content\js\syntaxhighlighter\styles\shCoreDefault.css" />
+    <Content Include="Content\js\syntaxhighlighter\styles\shCoreDjango.css" />
+    <Content Include="Content\js\syntaxhighlighter\styles\shCoreEclipse.css" />
+    <Content Include="Content\js\syntaxhighlighter\styles\shCoreEmacs.css" />
+    <Content Include="Content\js\syntaxhighlighter\styles\shCoreFadeToGrey.css" />
+    <Content Include="Content\js\syntaxhighlighter\styles\shCoreMDUltra.css" />
+    <Content Include="Content\js\syntaxhighlighter\styles\shCoreMidnight.css" />
+    <Content Include="Content\js\syntaxhighlighter\styles\shCoreRDark.css" />
+    <Content Include="Content\js\syntaxhighlighter\styles\shThemeDefault.css" />
+    <Content Include="Content\js\syntaxhighlighter\styles\shThemeDjango.css" />
+    <Content Include="Content\js\syntaxhighlighter\styles\shThemeEclipse.css" />
+    <Content Include="Content\js\syntaxhighlighter\styles\shThemeEmacs.css" />
+    <Content Include="Content\js\syntaxhighlighter\styles\shThemeFadeToGrey.css" />
+    <Content Include="Content\js\syntaxhighlighter\styles\shThemeMDUltra.css" />
+    <Content Include="Content\js\syntaxhighlighter\styles\shThemeMidnight.css" />
+    <Content Include="Content\js\syntaxhighlighter\styles\shThemeRDark.css" />
+    <Content Include="Content\js\yui\build\assets\skins\sam\ajax-loader.gif" />
+    <Content Include="Content\js\yui\build\assets\skins\sam\asc.gif" />
+    <Content Include="Content\js\yui\build\assets\skins\sam\autocomplete.css" />
+    <Content Include="Content\js\yui\build\assets\skins\sam\back-h.png" />
+    <Content Include="Content\js\yui\build\assets\skins\sam\back-v.png" />
+    <Content Include="Content\js\yui\build\assets\skins\sam\bar-h.png" />
+    <Content Include="Content\js\yui\build\assets\skins\sam\bar-v.png" />
+    <Content Include="Content\js\yui\build\assets\skins\sam\bg-h.gif" />
+    <Content Include="Content\js\yui\build\assets\skins\sam\bg-v.gif" />
+    <Content Include="Content\js\yui\build\assets\skins\sam\blankimage.png" />
+    <Content Include="Content\js\yui\build\assets\skins\sam\button.css" />
+    <Content Include="Content\js\yui\build\assets\skins\sam\calendar.css" />
+    <Content Include="Content\js\yui\build\assets\skins\sam\carousel.css" />
+    <Content Include="Content\js\yui\build\assets\skins\sam\check0.gif" />
+    <Content Include="Content\js\yui\build\assets\skins\sam\check1.gif" />
+    <Content Include="Content\js\yui\build\assets\skins\sam\check2.gif" />
+    <Content Include="Content\js\yui\build\assets\skins\sam\colorpicker.css" />
+    <Content Include="Content\js\yui\build\assets\skins\sam\container.css" />
+    <Content Include="Content\js\yui\build\assets\skins\sam\datatable.css" />
+    <Content Include="Content\js\yui\build\assets\skins\sam\desc.gif" />
+    <Content Include="Content\js\yui\build\assets\skins\sam\dt-arrow-dn.png" />
+    <Content Include="Content\js\yui\build\assets\skins\sam\dt-arrow-up.png" />
+    <Content Include="Content\js\yui\build\assets\skins\sam\editor-knob.gif" />
+    <Content Include="Content\js\yui\build\assets\skins\sam\editor-sprite-active.gif" />
+    <Content Include="Content\js\yui\build\assets\skins\sam\editor-sprite.gif" />
+    <Content Include="Content\js\yui\build\assets\skins\sam\editor.css" />
+    <Content Include="Content\js\yui\build\assets\skins\sam\header_background.png" />
+    <Content Include="Content\js\yui\build\assets\skins\sam\hue_bg.png" />
+    <Content Include="Content\js\yui\build\assets\skins\sam\imagecropper.css" />
+    <Content Include="Content\js\yui\build\assets\skins\sam\layout.css" />
+    <Content Include="Content\js\yui\build\assets\skins\sam\layout_sprite.png" />
+    <Content Include="Content\js\yui\build\assets\skins\sam\loading.gif" />
+    <Content Include="Content\js\yui\build\assets\skins\sam\logger.css" />
+    <Content Include="Content\js\yui\build\assets\skins\sam\menu-button-arrow-disabled.png" />
+    <Content Include="Content\js\yui\build\assets\skins\sam\menu-button-arrow.png" />
+    <Content Include="Content\js\yui\build\assets\skins\sam\menu.css" />
+    <Content Include="Content\js\yui\build\assets\skins\sam\menubaritem_submenuindicator.png" />
+    <Content Include="Content\js\yui\build\assets\skins\sam\menubaritem_submenuindicator_disabled.png" />
+    <Content Include="Content\js\yui\build\assets\skins\sam\menuitem_checkbox.png" />
+    <Content Include="Content\js\yui\build\assets\skins\sam\menuitem_checkbox_disabled.png" />
+    <Content Include="Content\js\yui\build\assets\skins\sam\menuitem_submenuindicator.png" />
+    <Content Include="Content\js\yui\build\assets\skins\sam\menuitem_submenuindicator_disabled.png" />
+    <Content Include="Content\js\yui\build\assets\skins\sam\paginator.css" />
+    <Content Include="Content\js\yui\build\assets\skins\sam\picker_mask.png" />
+    <Content Include="Content\js\yui\build\assets\skins\sam\profilerviewer.css" />
+    <Content Include="Content\js\yui\build\assets\skins\sam\progressbar.css" />
+    <Content Include="Content\js\yui\build\assets\skins\sam\resize.css" />
+    <Content Include="Content\js\yui\build\assets\skins\sam\simpleeditor.css" />
+    <Content Include="Content\js\yui\build\assets\skins\sam\skin.css" />
+    <Content Include="Content\js\yui\build\assets\skins\sam\slider.css" />
+    <Content Include="Content\js\yui\build\assets\skins\sam\split-button-arrow-active.png" />
+    <Content Include="Content\js\yui\build\assets\skins\sam\split-button-arrow-disabled.png" />
+    <Content Include="Content\js\yui\build\assets\skins\sam\split-button-arrow-focus.png" />
+    <Content Include="Content\js\yui\build\assets\skins\sam\split-button-arrow-hover.png" />
+    <Content Include="Content\js\yui\build\assets\skins\sam\split-button-arrow.png" />
+    <Content Include="Content\js\yui\build\assets\skins\sam\sprite.png" />
+    <Content Include="Content\js\yui\build\assets\skins\sam\tabview.css" />
+    <Content Include="Content\js\yui\build\assets\skins\sam\treeview-loading.gif" />
+    <Content Include="Content\js\yui\build\assets\skins\sam\treeview-sprite.gif" />
+    <Content Include="Content\js\yui\build\assets\skins\sam\treeview.css" />
+    <Content Include="Content\js\yui\build\assets\skins\sam\wait.gif" />
+    <Content Include="Content\js\yui\build\assets\skins\sam\yuitest.css" />
+    <Content Include="Content\js\yui\build\element\element-debug.js" />
+    <Content Include="Content\js\yui\build\element\element-min.js" />
+    <Content Include="Content\js\yui\build\element\element.js" />
+    <Content Include="Content\js\yui\build\tabview\assets\border_tabs.css" />
+    <Content Include="Content\js\yui\build\tabview\assets\loading.gif" />
+    <Content Include="Content\js\yui\build\tabview\assets\skin-sam.css" />
+    <Content Include="Content\js\yui\build\tabview\assets\skins\sam\tabview-skin.css" />
+    <Content Include="Content\js\yui\build\tabview\assets\skins\sam\tabview.css" />
+    <Content Include="Content\js\yui\build\tabview\assets\tabview-core.css" />
+    <Content Include="Content\js\yui\build\tabview\assets\tabview.css" />
+    <Content Include="Content\js\yui\build\tabview\tabview-debug.js" />
+    <Content Include="Content\js\yui\build\tabview\tabview-min.js" />
+    <Content Include="Content\js\yui\build\tabview\tabview.js" />
+    <Content Include="Content\js\yui\build\yahoo-dom-event\yahoo-dom-event.js" />
+    <Content Include="Content\Main.css" />
+    <Content Include="Content\PIE\PIE.htc" />
+    <Content Include="Content\PIE\PIE_uncompressed.htc" />
+    <Content Include="Content\Site.css" />
+    <Content Include="examples\java\Hierarchical.fsmjava">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="examples\java\Led.fsmjava" />
+    <Content Include="favicon.ico" />
+    <Content Include="Files\StateBuilderCpp-LinuxSetup.jar">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\StateBuilderCpp-MacSetup.jar">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\StateBuilderDotNet-Setup.msi" />
+    <Content Include="Files\StateBuilderJava-LinuxSetup.jar">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\StateBuilderJava-MacSetup.jar">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\StateBuilderJava-WinSetup.jar">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Global.asax" />
+    <Content Include="Help\concurrent-state-machine.aspx" />
+    <Content Include="Help\asynchronous-state-machine.aspx" />
+    <Content Include="Help\state-machine-observer.aspx" />
+    <Content Include="Help\state-machine-entry-exit.aspx" />
+    <Content Include="Help\state-machine-timers.aspx" />
+    <Content Include="Help\state-machine-events.aspx" />
+    <Content Include="Help\state-machine-transition.aspx" />
+    <Content Include="Help\hierarchical-state-machine.aspx" />
+    <Content Include="Help\state-machine-features.aspx" />
+    <Content Include="Help\Help.Master" />
+    <Content Include="Help\state-machine-tools.aspx" />
+    <Content Include="Help\StateBuilderCpp\build-examples-statebuildercpp-android.aspx" />
+    <Content Include="Help\StateBuilderCpp\build-examples-statebuildercpp-linux.aspx" />
+    <Content Include="Help\StateBuilderCpp\build-examples-statebuildercpp-windows.aspx" />
+    <Content Include="Help\StateBuilderCpp\build-examples-statebuildercpp-macosx.aspx" />
+    <Content Include="Help\StateBuilderCpp\context-statebuildercpp.aspx" />
+    <Content Include="Help\StateBuilderCpp\examples\Door\html\annotated.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Door\html\bc_s.png" />
+    <Content Include="Help\StateBuilderCpp\examples\Door\html\classes.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Door\html\class_app-members.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Door\html\class_app.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Door\html\class_door-members.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Door\html\class_door.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Door\html\class_door_private-members.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Door\html\class_door_private.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Door\html\class_door_tester-members.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Door\html\class_door_tester.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Door\html\class_engine-members.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Door\html\class_engine.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Door\html\closed.png" />
+    <Content Include="Help\StateBuilderCpp\examples\Door\html\doxygen.css" />
+    <Content Include="Help\StateBuilderCpp\examples\Door\html\doxygen.png" />
+    <Content Include="Help\StateBuilderCpp\examples\Door\html\files.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Door\html\functions.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Door\html\functions_func.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Door\html\functions_rela.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Door\html\functions_vars.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Door\html\globals.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Door\html\globals_func.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Door\html\index.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Door\html\jquery.js" />
+    <Content Include="Help\StateBuilderCpp\examples\Door\html\main_8cpp.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Door\html\main_8cpp_source.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Door\html\main_8h.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Door\html\main_8h_source.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Door\html\nav_f.png" />
+    <Content Include="Help\StateBuilderCpp\examples\Door\html\nav_h.png" />
+    <Content Include="Help\StateBuilderCpp\examples\Door\html\open.png" />
+    <Content Include="Help\StateBuilderCpp\examples\Door\html\tabs.css" />
+    <Content Include="Help\StateBuilderCpp\examples\Door\html\tab_a.png" />
+    <Content Include="Help\StateBuilderCpp\examples\Door\html\tab_b.png" />
+    <Content Include="Help\StateBuilderCpp\examples\Door\html\tab_h.png" />
+    <Content Include="Help\StateBuilderCpp\examples\Door\html\tab_s.png" />
+    <Content Include="Help\StateBuilderCpp\examples\Door\html\_door_8cpp.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Door\html\_door_8cpp_source.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Door\html\_door_8fsmcpp.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Door\html\_door_8fsmcpp_source.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Door\html\_door_8h.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Door\html\_door_8h_source.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Door\html\_door_private_8h.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Door\html\_door_private_8h_source.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Door\html\_door_tester_8cpp.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Door\html\_door_tester_8cpp_source.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Door\html\_door_tester_8fsmcpp.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Door\html\_door_tester_8fsmcpp_source.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Door\html\_door_tester_8h.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Door\html\_door_tester_8h_source.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Door\html\_engine_8cpp.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Door\html\_engine_8cpp_source.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Door\html\_engine_8h.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Door\html\_engine_8h_source.html" />
+    <Content Include="Help\StateBuilderCpp\examples\HelloWorldSync\html\annotated.html" />
+    <Content Include="Help\StateBuilderCpp\examples\HelloWorldSync\html\bc_s.png" />
+    <Content Include="Help\StateBuilderCpp\examples\HelloWorldSync\html\classes.html" />
+    <Content Include="Help\StateBuilderCpp\examples\HelloWorldSync\html\class_hello_world-members.html" />
+    <Content Include="Help\StateBuilderCpp\examples\HelloWorldSync\html\class_hello_world.html" />
+    <Content Include="Help\StateBuilderCpp\examples\HelloWorldSync\html\closed.png" />
+    <Content Include="Help\StateBuilderCpp\examples\HelloWorldSync\html\doxygen.css" />
+    <Content Include="Help\StateBuilderCpp\examples\HelloWorldSync\html\doxygen.png" />
+    <Content Include="Help\StateBuilderCpp\examples\HelloWorldSync\html\files.html" />
+    <Content Include="Help\StateBuilderCpp\examples\HelloWorldSync\html\functions.html" />
+    <Content Include="Help\StateBuilderCpp\examples\HelloWorldSync\html\functions_func.html" />
+    <Content Include="Help\StateBuilderCpp\examples\HelloWorldSync\html\functions_vars.html" />
+    <Content Include="Help\StateBuilderCpp\examples\HelloWorldSync\html\globals.html" />
+    <Content Include="Help\StateBuilderCpp\examples\HelloWorldSync\html\globals_defs.html" />
+    <Content Include="Help\StateBuilderCpp\examples\HelloWorldSync\html\globals_func.html" />
+    <Content Include="Help\StateBuilderCpp\examples\HelloWorldSync\html\index.html" />
+    <Content Include="Help\StateBuilderCpp\examples\HelloWorldSync\html\jquery.js" />
+    <Content Include="Help\StateBuilderCpp\examples\HelloWorldSync\html\main_8cpp.html" />
+    <Content Include="Help\StateBuilderCpp\examples\HelloWorldSync\html\main_8cpp_source.html" />
+    <Content Include="Help\StateBuilderCpp\examples\HelloWorldSync\html\nav_f.png" />
+    <Content Include="Help\StateBuilderCpp\examples\HelloWorldSync\html\nav_h.png" />
+    <Content Include="Help\StateBuilderCpp\examples\HelloWorldSync\html\open.png" />
+    <Content Include="Help\StateBuilderCpp\examples\HelloWorldSync\html\tabs.css" />
+    <Content Include="Help\StateBuilderCpp\examples\HelloWorldSync\html\tab_a.png" />
+    <Content Include="Help\StateBuilderCpp\examples\HelloWorldSync\html\tab_b.png" />
+    <Content Include="Help\StateBuilderCpp\examples\HelloWorldSync\html\tab_h.png" />
+    <Content Include="Help\StateBuilderCpp\examples\HelloWorldSync\html\tab_s.png" />
+    <Content Include="Help\StateBuilderCpp\examples\HelloWorldSync\html\_hello_world_8cpp.html" />
+    <Content Include="Help\StateBuilderCpp\examples\HelloWorldSync\html\_hello_world_8cpp_source.html" />
+    <Content Include="Help\StateBuilderCpp\examples\HelloWorldSync\html\_hello_world_8fsmcpp.html" />
+    <Content Include="Help\StateBuilderCpp\examples\HelloWorldSync\html\_hello_world_8fsmcpp_source.html" />
+    <Content Include="Help\StateBuilderCpp\examples\HelloWorldSync\html\_hello_world_8h.html" />
+    <Content Include="Help\StateBuilderCpp\examples\HelloWorldSync\html\_hello_world_8h_source.html" />
+    <Content Include="Help\StateBuilderCpp\examples\HelloWorld\html\annotated.html" />
+    <Content Include="Help\StateBuilderCpp\examples\HelloWorld\html\bc_s.png" />
+    <Content Include="Help\StateBuilderCpp\examples\HelloWorld\html\classes.html" />
+    <Content Include="Help\StateBuilderCpp\examples\HelloWorld\html\class_app-members.html" />
+    <Content Include="Help\StateBuilderCpp\examples\HelloWorld\html\class_app.html" />
+    <Content Include="Help\StateBuilderCpp\examples\HelloWorld\html\class_hello_world-members.html" />
+    <Content Include="Help\StateBuilderCpp\examples\HelloWorld\html\class_hello_world.html" />
+    <Content Include="Help\StateBuilderCpp\examples\HelloWorld\html\closed.png" />
+    <Content Include="Help\StateBuilderCpp\examples\HelloWorld\html\doxygen.css" />
+    <Content Include="Help\StateBuilderCpp\examples\HelloWorld\html\doxygen.png" />
+    <Content Include="Help\StateBuilderCpp\examples\HelloWorld\html\files.html" />
+    <Content Include="Help\StateBuilderCpp\examples\HelloWorld\html\functions.html" />
+    <Content Include="Help\StateBuilderCpp\examples\HelloWorld\html\functions_func.html" />
+    <Content Include="Help\StateBuilderCpp\examples\HelloWorld\html\functions_vars.html" />
+    <Content Include="Help\StateBuilderCpp\examples\HelloWorld\html\globals.html" />
+    <Content Include="Help\StateBuilderCpp\examples\HelloWorld\html\globals_func.html" />
+    <Content Include="Help\StateBuilderCpp\examples\HelloWorld\html\globals_vars.html" />
+    <Content Include="Help\StateBuilderCpp\examples\HelloWorld\html\index.html" />
+    <Content Include="Help\StateBuilderCpp\examples\HelloWorld\html\jquery.js" />
+    <Content Include="Help\StateBuilderCpp\examples\HelloWorld\html\main_8cpp.html" />
+    <Content Include="Help\StateBuilderCpp\examples\HelloWorld\html\main_8cpp_source.html" />
+    <Content Include="Help\StateBuilderCpp\examples\HelloWorld\html\main_8h.html" />
+    <Content Include="Help\StateBuilderCpp\examples\HelloWorld\html\main_8h_source.html" />
+    <Content Include="Help\StateBuilderCpp\examples\HelloWorld\html\nav_f.png" />
+    <Content Include="Help\StateBuilderCpp\examples\HelloWorld\html\nav_h.png" />
+    <Content Include="Help\StateBuilderCpp\examples\HelloWorld\html\open.png" />
+    <Content Include="Help\StateBuilderCpp\examples\HelloWorld\html\tabs.css" />
+    <Content Include="Help\StateBuilderCpp\examples\HelloWorld\html\tab_a.png" />
+    <Content Include="Help\StateBuilderCpp\examples\HelloWorld\html\tab_b.png" />
+    <Content Include="Help\StateBuilderCpp\examples\HelloWorld\html\tab_h.png" />
+    <Content Include="Help\StateBuilderCpp\examples\HelloWorld\html\tab_s.png" />
+    <Content Include="Help\StateBuilderCpp\examples\HelloWorld\html\_hello_world_8cpp.html" />
+    <Content Include="Help\StateBuilderCpp\examples\HelloWorld\html\_hello_world_8cpp_source.html" />
+    <Content Include="Help\StateBuilderCpp\examples\HelloWorld\html\_hello_world_8fsmcpp.html" />
+    <Content Include="Help\StateBuilderCpp\examples\HelloWorld\html\_hello_world_8fsmcpp_source.html" />
+    <Content Include="Help\StateBuilderCpp\examples\HelloWorld\html\_hello_world_8h.html" />
+    <Content Include="Help\StateBuilderCpp\examples\HelloWorld\html\_hello_world_8h_source.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Led\html\annotated.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Led\html\bc_s.png" />
+    <Content Include="Help\StateBuilderCpp\examples\Led\html\classes.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Led\html\class_led-members.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Led\html\class_led.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Led\html\class_led_private-members.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Led\html\class_led_private.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Led\html\closed.png" />
+    <Content Include="Help\StateBuilderCpp\examples\Led\html\doxygen.css" />
+    <Content Include="Help\StateBuilderCpp\examples\Led\html\doxygen.png" />
+    <Content Include="Help\StateBuilderCpp\examples\Led\html\files.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Led\html\functions.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Led\html\functions_func.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Led\html\functions_vars.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Led\html\globals.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Led\html\globals_func.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Led\html\index.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Led\html\jquery.js" />
+    <Content Include="Help\StateBuilderCpp\examples\Led\html\main_8cpp.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Led\html\main_8cpp_source.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Led\html\nav_f.png" />
+    <Content Include="Help\StateBuilderCpp\examples\Led\html\nav_h.png" />
+    <Content Include="Help\StateBuilderCpp\examples\Led\html\open.png" />
+    <Content Include="Help\StateBuilderCpp\examples\Led\html\tabs.css" />
+    <Content Include="Help\StateBuilderCpp\examples\Led\html\tab_a.png" />
+    <Content Include="Help\StateBuilderCpp\examples\Led\html\tab_b.png" />
+    <Content Include="Help\StateBuilderCpp\examples\Led\html\tab_h.png" />
+    <Content Include="Help\StateBuilderCpp\examples\Led\html\tab_s.png" />
+    <Content Include="Help\StateBuilderCpp\examples\Led\html\_led_8cpp.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Led\html\_led_8cpp_source.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Led\html\_led_8fsmcpp.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Led\html\_led_8fsmcpp_source.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Led\html\_led_8h.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Led\html\_led_8h_source.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Led\html\_led_private_8h.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Led\html\_led_private_8h_source.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Light\html\annotated.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Light\html\bc_s.png" />
+    <Content Include="Help\StateBuilderCpp\examples\Light\html\classes.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Light\html\class_app-members.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Light\html\class_app.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Light\html\class_light-members.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Light\html\class_light.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Light\html\class_light_private-members.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Light\html\class_light_private.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Light\html\closed.png" />
+    <Content Include="Help\StateBuilderCpp\examples\Light\html\doxygen.css" />
+    <Content Include="Help\StateBuilderCpp\examples\Light\html\doxygen.png" />
+    <Content Include="Help\StateBuilderCpp\examples\Light\html\files.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Light\html\functions.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Light\html\functions_func.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Light\html\functions_vars.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Light\html\globals.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Light\html\globals_func.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Light\html\index.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Light\html\jquery.js" />
+    <Content Include="Help\StateBuilderCpp\examples\Light\html\main_8cpp.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Light\html\main_8cpp_source.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Light\html\main_8h.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Light\html\main_8h_source.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Light\html\nav_f.png" />
+    <Content Include="Help\StateBuilderCpp\examples\Light\html\nav_h.png" />
+    <Content Include="Help\StateBuilderCpp\examples\Light\html\open.png" />
+    <Content Include="Help\StateBuilderCpp\examples\Light\html\tabs.css" />
+    <Content Include="Help\StateBuilderCpp\examples\Light\html\tab_a.png" />
+    <Content Include="Help\StateBuilderCpp\examples\Light\html\tab_b.png" />
+    <Content Include="Help\StateBuilderCpp\examples\Light\html\tab_h.png" />
+    <Content Include="Help\StateBuilderCpp\examples\Light\html\tab_s.png" />
+    <Content Include="Help\StateBuilderCpp\examples\Light\html\_light_8cpp.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Light\html\_light_8cpp_source.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Light\html\_light_8fsmcpp.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Light\html\_light_8fsmcpp_source.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Light\html\_light_8h.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Light\html\_light_8h_source.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Light\html\_light_private_8cpp.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Light\html\_light_private_8cpp_source.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Light\html\_light_private_8h.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Light\html\_light_private_8h_source.html" />
+    <Content Include="Help\StateBuilderCpp\examples\LoginMvc\html\annotated.html" />
+    <Content Include="Help\StateBuilderCpp\examples\LoginMvc\html\bc_s.png" />
+    <Content Include="Help\StateBuilderCpp\examples\LoginMvc\html\classes.html" />
+    <Content Include="Help\StateBuilderCpp\examples\LoginMvc\html\class_abstract_model-members.html" />
+    <Content Include="Help\StateBuilderCpp\examples\LoginMvc\html\class_abstract_model.html" />
+    <Content Include="Help\StateBuilderCpp\examples\LoginMvc\html\class_dummy_model-members.html" />
+    <Content Include="Help\StateBuilderCpp\examples\LoginMvc\html\class_dummy_model.html" />
+    <Content Include="Help\StateBuilderCpp\examples\LoginMvc\html\class_g_mail_model-members.html" />
+    <Content Include="Help\StateBuilderCpp\examples\LoginMvc\html\class_g_mail_model.html" />
+    <Content Include="Help\StateBuilderCpp\examples\LoginMvc\html\class_login_mvc-members.html" />
+    <Content Include="Help\StateBuilderCpp\examples\LoginMvc\html\class_login_mvc.html" />
+    <Content Include="Help\StateBuilderCpp\examples\LoginMvc\html\class_my_view-members.html" />
+    <Content Include="Help\StateBuilderCpp\examples\LoginMvc\html\class_my_view.html" />
+    <Content Include="Help\StateBuilderCpp\examples\LoginMvc\html\closed.png" />
+    <Content Include="Help\StateBuilderCpp\examples\LoginMvc\html\doxygen.css" />
+    <Content Include="Help\StateBuilderCpp\examples\LoginMvc\html\doxygen.png" />
+    <Content Include="Help\StateBuilderCpp\examples\LoginMvc\html\files.html" />
+    <Content Include="Help\StateBuilderCpp\examples\LoginMvc\html\functions.html" />
+    <Content Include="Help\StateBuilderCpp\examples\LoginMvc\html\functions_func.html" />
+    <Content Include="Help\StateBuilderCpp\examples\LoginMvc\html\functions_vars.html" />
+    <Content Include="Help\StateBuilderCpp\examples\LoginMvc\html\globals.html" />
+    <Content Include="Help\StateBuilderCpp\examples\LoginMvc\html\globals_func.html" />
+    <Content Include="Help\StateBuilderCpp\examples\LoginMvc\html\hierarchy.html" />
+    <Content Include="Help\StateBuilderCpp\examples\LoginMvc\html\index.html" />
+    <Content Include="Help\StateBuilderCpp\examples\LoginMvc\html\jquery.js" />
+    <Content Include="Help\StateBuilderCpp\examples\LoginMvc\html\main_8cpp.html" />
+    <Content Include="Help\StateBuilderCpp\examples\LoginMvc\html\main_8cpp_source.html" />
+    <Content Include="Help\StateBuilderCpp\examples\LoginMvc\html\nav_f.png" />
+    <Content Include="Help\StateBuilderCpp\examples\LoginMvc\html\nav_h.png" />
+    <Content Include="Help\StateBuilderCpp\examples\LoginMvc\html\open.png" />
+    <Content Include="Help\StateBuilderCpp\examples\LoginMvc\html\tabs.css" />
+    <Content Include="Help\StateBuilderCpp\examples\LoginMvc\html\tab_a.png" />
+    <Content Include="Help\StateBuilderCpp\examples\LoginMvc\html\tab_b.png" />
+    <Content Include="Help\StateBuilderCpp\examples\LoginMvc\html\tab_h.png" />
+    <Content Include="Help\StateBuilderCpp\examples\LoginMvc\html\tab_s.png" />
+    <Content Include="Help\StateBuilderCpp\examples\LoginMvc\html\_login_mvc_8cpp.html" />
+    <Content Include="Help\StateBuilderCpp\examples\LoginMvc\html\_login_mvc_8cpp_source.html" />
+    <Content Include="Help\StateBuilderCpp\examples\LoginMvc\html\_login_mvc_8fsmcpp.html" />
+    <Content Include="Help\StateBuilderCpp\examples\LoginMvc\html\_login_mvc_8fsmcpp_source.html" />
+    <Content Include="Help\StateBuilderCpp\examples\LoginMvc\html\_login_mvc_8h.html" />
+    <Content Include="Help\StateBuilderCpp\examples\LoginMvc\html\_login_mvc_8h_source.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Microwave02\html\annotated.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Microwave02\html\bc_s.png" />
+    <Content Include="Help\StateBuilderCpp\examples\Microwave02\html\classes.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Microwave02\html\class_app-members.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Microwave02\html\class_app.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Microwave02\html\class_lock_boost-members.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Microwave02\html\class_lock_boost.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Microwave02\html\class_microwave-members.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Microwave02\html\class_microwave.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Microwave02\html\closed.png" />
+    <Content Include="Help\StateBuilderCpp\examples\Microwave02\html\doxygen.css" />
+    <Content Include="Help\StateBuilderCpp\examples\Microwave02\html\doxygen.png" />
+    <Content Include="Help\StateBuilderCpp\examples\Microwave02\html\files.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Microwave02\html\functions.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Microwave02\html\functions_func.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Microwave02\html\functions_vars.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Microwave02\html\globals.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Microwave02\html\globals_func.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Microwave02\html\index.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Microwave02\html\jquery.js" />
+    <Content Include="Help\StateBuilderCpp\examples\Microwave02\html\main_8cpp.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Microwave02\html\main_8cpp_source.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Microwave02\html\main_8h.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Microwave02\html\main_8h_source.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Microwave02\html\nav_f.png" />
+    <Content Include="Help\StateBuilderCpp\examples\Microwave02\html\nav_h.png" />
+    <Content Include="Help\StateBuilderCpp\examples\Microwave02\html\open.png" />
+    <Content Include="Help\StateBuilderCpp\examples\Microwave02\html\tabs.css" />
+    <Content Include="Help\StateBuilderCpp\examples\Microwave02\html\tab_a.png" />
+    <Content Include="Help\StateBuilderCpp\examples\Microwave02\html\tab_b.png" />
+    <Content Include="Help\StateBuilderCpp\examples\Microwave02\html\tab_h.png" />
+    <Content Include="Help\StateBuilderCpp\examples\Microwave02\html\tab_s.png" />
+    <Content Include="Help\StateBuilderCpp\examples\Microwave02\html\_lock_boost_8cpp.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Microwave02\html\_lock_boost_8cpp_source.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Microwave02\html\_lock_boost_8h.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Microwave02\html\_lock_boost_8h_source.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Microwave02\html\_microwave02_8fsmcpp.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Microwave02\html\_microwave02_8fsmcpp_source.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Microwave02\html\_microwave_8cpp.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Microwave02\html\_microwave_8cpp_source.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Microwave02\html\_microwave_8h.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Microwave02\html\_microwave_8h_source.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Microwave\html\annotated.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Microwave\html\bc_s.png" />
+    <Content Include="Help\StateBuilderCpp\examples\Microwave\html\classes.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Microwave\html\class_app-members.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Microwave\html\class_app.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Microwave\html\class_microwave-members.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Microwave\html\class_microwave.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Microwave\html\closed.png" />
+    <Content Include="Help\StateBuilderCpp\examples\Microwave\html\doxygen.css" />
+    <Content Include="Help\StateBuilderCpp\examples\Microwave\html\doxygen.png" />
+    <Content Include="Help\StateBuilderCpp\examples\Microwave\html\files.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Microwave\html\functions.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Microwave\html\functions_func.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Microwave\html\functions_vars.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Microwave\html\globals.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Microwave\html\globals_defs.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Microwave\html\globals_func.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Microwave\html\index.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Microwave\html\jquery.js" />
+    <Content Include="Help\StateBuilderCpp\examples\Microwave\html\main_8cpp.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Microwave\html\main_8cpp_source.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Microwave\html\main_8h.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Microwave\html\main_8h_source.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Microwave\html\nav_f.png" />
+    <Content Include="Help\StateBuilderCpp\examples\Microwave\html\nav_h.png" />
+    <Content Include="Help\StateBuilderCpp\examples\Microwave\html\open.png" />
+    <Content Include="Help\StateBuilderCpp\examples\Microwave\html\tabs.css" />
+    <Content Include="Help\StateBuilderCpp\examples\Microwave\html\tab_a.png" />
+    <Content Include="Help\StateBuilderCpp\examples\Microwave\html\tab_b.png" />
+    <Content Include="Help\StateBuilderCpp\examples\Microwave\html\tab_h.png" />
+    <Content Include="Help\StateBuilderCpp\examples\Microwave\html\tab_s.png" />
+    <Content Include="Help\StateBuilderCpp\examples\Microwave\html\_microwave_8cpp.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Microwave\html\_microwave_8cpp_source.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Microwave\html\_microwave_8fsmcpp.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Microwave\html\_microwave_8fsmcpp_source.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Microwave\html\_microwave_8h.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Microwave\html\_microwave_8h_source.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Ping\html\annotated.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Ping\html\bc_s.png" />
+    <Content Include="Help\StateBuilderCpp\examples\Ping\html\classes.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Ping\html\class_ping-members.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Ping\html\class_ping.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Ping\html\class_udp_echo_client-members.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Ping\html\class_udp_echo_client.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Ping\html\class_udp_echo_server-members.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Ping\html\class_udp_echo_server.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Ping\html\closed.png" />
+    <Content Include="Help\StateBuilderCpp\examples\Ping\html\doxygen.css" />
+    <Content Include="Help\StateBuilderCpp\examples\Ping\html\doxygen.png" />
+    <Content Include="Help\StateBuilderCpp\examples\Ping\html\files.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Ping\html\functions.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Ping\html\functions_func.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Ping\html\functions_vars.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Ping\html\globals.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Ping\html\globals_func.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Ping\html\index.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Ping\html\jquery.js" />
+    <Content Include="Help\StateBuilderCpp\examples\Ping\html\main_8cpp.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Ping\html\main_8cpp_source.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Ping\html\nav_f.png" />
+    <Content Include="Help\StateBuilderCpp\examples\Ping\html\nav_h.png" />
+    <Content Include="Help\StateBuilderCpp\examples\Ping\html\open.png" />
+    <Content Include="Help\StateBuilderCpp\examples\Ping\html\tabs.css" />
+    <Content Include="Help\StateBuilderCpp\examples\Ping\html\tab_a.png" />
+    <Content Include="Help\StateBuilderCpp\examples\Ping\html\tab_b.png" />
+    <Content Include="Help\StateBuilderCpp\examples\Ping\html\tab_h.png" />
+    <Content Include="Help\StateBuilderCpp\examples\Ping\html\tab_s.png" />
+    <Content Include="Help\StateBuilderCpp\examples\Ping\html\_ping_8cpp.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Ping\html\_ping_8cpp_source.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Ping\html\_ping_8fsmcpp.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Ping\html\_ping_8fsmcpp_source.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Ping\html\_ping_8h.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Ping\html\_ping_8h_source.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Ping\html\_udp_echo_client_8cpp.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Ping\html\_udp_echo_client_8cpp_source.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Ping\html\_udp_echo_client_8h.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Ping\html\_udp_echo_client_8h_source.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Ping\html\_udp_echo_server_8cpp.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Ping\html\_udp_echo_server_8cpp_source.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Ping\html\_udp_echo_server_8h.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Ping\html\_udp_echo_server_8h_source.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Robot\html\annotated.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Robot\html\bc_s.png" />
+    <Content Include="Help\StateBuilderCpp\examples\Robot\html\classes.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Robot\html\class_arm-members.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Robot\html\class_arm.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Robot\html\class_camera-members.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Robot\html\class_camera.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Robot\html\class_robot-members.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Robot\html\class_robot.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Robot\html\closed.png" />
+    <Content Include="Help\StateBuilderCpp\examples\Robot\html\doxygen.css" />
+    <Content Include="Help\StateBuilderCpp\examples\Robot\html\doxygen.png" />
+    <Content Include="Help\StateBuilderCpp\examples\Robot\html\files.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Robot\html\functions.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Robot\html\functions_func.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Robot\html\functions_vars.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Robot\html\globals.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Robot\html\globals_func.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Robot\html\index.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Robot\html\jquery.js" />
+    <Content Include="Help\StateBuilderCpp\examples\Robot\html\main_8cpp.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Robot\html\main_8cpp_source.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Robot\html\nav_f.png" />
+    <Content Include="Help\StateBuilderCpp\examples\Robot\html\nav_h.png" />
+    <Content Include="Help\StateBuilderCpp\examples\Robot\html\open.png" />
+    <Content Include="Help\StateBuilderCpp\examples\Robot\html\tabs.css" />
+    <Content Include="Help\StateBuilderCpp\examples\Robot\html\tab_a.png" />
+    <Content Include="Help\StateBuilderCpp\examples\Robot\html\tab_b.png" />
+    <Content Include="Help\StateBuilderCpp\examples\Robot\html\tab_h.png" />
+    <Content Include="Help\StateBuilderCpp\examples\Robot\html\tab_s.png" />
+    <Content Include="Help\StateBuilderCpp\examples\Robot\html\_arm_8cpp.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Robot\html\_arm_8cpp_source.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Robot\html\_arm_8h.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Robot\html\_arm_8h_source.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Robot\html\_camera_8cpp.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Robot\html\_camera_8cpp_source.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Robot\html\_camera_8h.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Robot\html\_camera_8h_source.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Robot\html\_robot_8cpp.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Robot\html\_robot_8cpp_source.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Robot\html\_robot_8fsmcpp.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Robot\html\_robot_8fsmcpp_source.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Robot\html\_robot_8h.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Robot\html\_robot_8h_source.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Samek\html\annotated.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Samek\html\bc_s.png" />
+    <Content Include="Help\StateBuilderCpp\examples\Samek\html\classes.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Samek\html\class_app-members.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Samek\html\class_app.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Samek\html\class_samek-members.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Samek\html\class_samek.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Samek\html\closed.png" />
+    <Content Include="Help\StateBuilderCpp\examples\Samek\html\doxygen.css" />
+    <Content Include="Help\StateBuilderCpp\examples\Samek\html\doxygen.png" />
+    <Content Include="Help\StateBuilderCpp\examples\Samek\html\files.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Samek\html\functions.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Samek\html\functions_func.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Samek\html\functions_vars.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Samek\html\globals.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Samek\html\globals_func.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Samek\html\globals_vars.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Samek\html\index.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Samek\html\jquery.js" />
+    <Content Include="Help\StateBuilderCpp\examples\Samek\html\main_8cpp.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Samek\html\main_8cpp_source.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Samek\html\main_8h.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Samek\html\main_8h_source.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Samek\html\nav_f.png" />
+    <Content Include="Help\StateBuilderCpp\examples\Samek\html\nav_h.png" />
+    <Content Include="Help\StateBuilderCpp\examples\Samek\html\open.png" />
+    <Content Include="Help\StateBuilderCpp\examples\Samek\html\tabs.css" />
+    <Content Include="Help\StateBuilderCpp\examples\Samek\html\tab_a.png" />
+    <Content Include="Help\StateBuilderCpp\examples\Samek\html\tab_b.png" />
+    <Content Include="Help\StateBuilderCpp\examples\Samek\html\tab_h.png" />
+    <Content Include="Help\StateBuilderCpp\examples\Samek\html\tab_s.png" />
+    <Content Include="Help\StateBuilderCpp\examples\Samek\html\_samek_8cpp.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Samek\html\_samek_8cpp_source.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Samek\html\_samek_8fsmcpp.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Samek\html\_samek_8fsmcpp_source.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Samek\html\_samek_8h.html" />
+    <Content Include="Help\StateBuilderCpp\examples\Samek\html\_samek_8h_source.html" />
+    <Content Include="Help\StateBuilderCpp\examples\TrafficLight\html\annotated.html" />
+    <Content Include="Help\StateBuilderCpp\examples\TrafficLight\html\bc_s.png" />
+    <Content Include="Help\StateBuilderCpp\examples\TrafficLight\html\classes.html" />
+    <Content Include="Help\StateBuilderCpp\examples\TrafficLight\html\class_light-members.html" />
+    <Content Include="Help\StateBuilderCpp\examples\TrafficLight\html\class_light.html" />
+    <Content Include="Help\StateBuilderCpp\examples\TrafficLight\html\class_traffic_light-members.html" />
+    <Content Include="Help\StateBuilderCpp\examples\TrafficLight\html\class_traffic_light.html" />
+    <Content Include="Help\StateBuilderCpp\examples\TrafficLight\html\closed.png" />
+    <Content Include="Help\StateBuilderCpp\examples\TrafficLight\html\doxygen.css" />
+    <Content Include="Help\StateBuilderCpp\examples\TrafficLight\html\doxygen.png" />
+    <Content Include="Help\StateBuilderCpp\examples\TrafficLight\html\files.html" />
+    <Content Include="Help\StateBuilderCpp\examples\TrafficLight\html\functions.html" />
+    <Content Include="Help\StateBuilderCpp\examples\TrafficLight\html\functions_func.html" />
+    <Content Include="Help\StateBuilderCpp\examples\TrafficLight\html\functions_vars.html" />
+    <Content Include="Help\StateBuilderCpp\examples\TrafficLight\html\globals.html" />
+    <Content Include="Help\StateBuilderCpp\examples\TrafficLight\html\globals_func.html" />
+    <Content Include="Help\StateBuilderCpp\examples\TrafficLight\html\index.html" />
+    <Content Include="Help\StateBuilderCpp\examples\TrafficLight\html\jquery.js" />
+    <Content Include="Help\StateBuilderCpp\examples\TrafficLight\html\main_8cpp.html" />
+    <Content Include="Help\StateBuilderCpp\examples\TrafficLight\html\main_8cpp_source.html" />
+    <Content Include="Help\StateBuilderCpp\examples\TrafficLight\html\nav_f.png" />
+    <Content Include="Help\StateBuilderCpp\examples\TrafficLight\html\nav_h.png" />
+    <Content Include="Help\StateBuilderCpp\examples\TrafficLight\html\open.png" />
+    <Content Include="Help\StateBuilderCpp\examples\TrafficLight\html\tabs.css" />
+    <Content Include="Help\StateBuilderCpp\examples\TrafficLight\html\tab_a.png" />
+    <Content Include="Help\StateBuilderCpp\examples\TrafficLight\html\tab_b.png" />
+    <Content Include="Help\StateBuilderCpp\examples\TrafficLight\html\tab_h.png" />
+    <Content Include="Help\StateBuilderCpp\examples\TrafficLight\html\tab_s.png" />
+    <Content Include="Help\StateBuilderCpp\examples\TrafficLight\html\_light_8cpp.html" />
+    <Content Include="Help\StateBuilderCpp\examples\TrafficLight\html\_light_8cpp_source.html" />
+    <Content Include="Help\StateBuilderCpp\examples\TrafficLight\html\_light_8h.html" />
+    <Content Include="Help\StateBuilderCpp\examples\TrafficLight\html\_light_8h_source.html" />
+    <Content Include="Help\StateBuilderCpp\examples\TrafficLight\html\_traffic_light_8cpp.html" />
+    <Content Include="Help\StateBuilderCpp\examples\TrafficLight\html\_traffic_light_8cpp_source.html" />
+    <Content Include="Help\StateBuilderCpp\examples\TrafficLight\html\_traffic_light_8fsmcpp.html" />
+    <Content Include="Help\StateBuilderCpp\examples\TrafficLight\html\_traffic_light_8fsmcpp_source.html" />
+    <Content Include="Help\StateBuilderCpp\examples\TrafficLight\html\_traffic_light_8h.html" />
+    <Content Include="Help\StateBuilderCpp\examples\TrafficLight\html\_traffic_light_8h_source.html" />
+    <Content Include="Help\StateBuilderCpp\examples\UrlGet\html\annotated.html" />
+    <Content Include="Help\StateBuilderCpp\examples\UrlGet\html\bc_s.png" />
+    <Content Include="Help\StateBuilderCpp\examples\UrlGet\html\classes.html" />
+    <Content Include="Help\StateBuilderCpp\examples\UrlGet\html\class_url_get-members.html" />
+    <Content Include="Help\StateBuilderCpp\examples\UrlGet\html\class_url_get.html" />
+    <Content Include="Help\StateBuilderCpp\examples\UrlGet\html\closed.png" />
+    <Content Include="Help\StateBuilderCpp\examples\UrlGet\html\doxygen.css" />
+    <Content Include="Help\StateBuilderCpp\examples\UrlGet\html\doxygen.png" />
+    <Content Include="Help\StateBuilderCpp\examples\UrlGet\html\files.html" />
+    <Content Include="Help\StateBuilderCpp\examples\UrlGet\html\functions.html" />
+    <Content Include="Help\StateBuilderCpp\examples\UrlGet\html\functions_func.html" />
+    <Content Include="Help\StateBuilderCpp\examples\UrlGet\html\functions_vars.html" />
+    <Content Include="Help\StateBuilderCpp\examples\UrlGet\html\globals.html" />
+    <Content Include="Help\StateBuilderCpp\examples\UrlGet\html\globals_func.html" />
+    <Content Include="Help\StateBuilderCpp\examples\UrlGet\html\index.html" />
+    <Content Include="Help\StateBuilderCpp\examples\UrlGet\html\jquery.js" />
+    <Content Include="Help\StateBuilderCpp\examples\UrlGet\html\main_8cpp.html" />
+    <Content Include="Help\StateBuilderCpp\examples\UrlGet\html\main_8cpp_source.html" />
+    <Content Include="Help\StateBuilderCpp\examples\UrlGet\html\nav_f.png" />
+    <Content Include="Help\StateBuilderCpp\examples\UrlGet\html\nav_h.png" />
+    <Content Include="Help\StateBuilderCpp\examples\UrlGet\html\open.png" />
+    <Content Include="Help\StateBuilderCpp\examples\UrlGet\html\tabs.css" />
+    <Content Include="Help\StateBuilderCpp\examples\UrlGet\html\tab_a.png" />
+    <Content Include="Help\StateBuilderCpp\examples\UrlGet\html\tab_b.png" />
+    <Content Include="Help\StateBuilderCpp\examples\UrlGet\html\tab_h.png" />
+    <Content Include="Help\StateBuilderCpp\examples\UrlGet\html\tab_s.png" />
+    <Content Include="Help\StateBuilderCpp\examples\UrlGet\html\_url_get_8cpp.html" />
+    <Content Include="Help\StateBuilderCpp\examples\UrlGet\html\_url_get_8cpp_source.html" />
+    <Content Include="Help\StateBuilderCpp\examples\UrlGet\html\_url_get_8fsmcpp.html" />
+    <Content Include="Help\StateBuilderCpp\examples\UrlGet\html\_url_get_8fsmcpp_source.html" />
+    <Content Include="Help\StateBuilderCpp\examples\UrlGet\html\_url_get_8h.html" />
+    <Content Include="Help\StateBuilderCpp\examples\UrlGet\html\_url_get_8h_source.html" />
+    <Content Include="Help\StateBuilderCpp\examples\WashingMachine\html\annotated.html" />
+    <Content Include="Help\StateBuilderCpp\examples\WashingMachine\html\bc_s.png" />
+    <Content Include="Help\StateBuilderCpp\examples\WashingMachine\html\classes.html" />
+    <Content Include="Help\StateBuilderCpp\examples\WashingMachine\html\class_app-members.html" />
+    <Content Include="Help\StateBuilderCpp\examples\WashingMachine\html\class_app.html" />
+    <Content Include="Help\StateBuilderCpp\examples\WashingMachine\html\class_washing_machine-members.html" />
+    <Content Include="Help\StateBuilderCpp\examples\WashingMachine\html\class_washing_machine.html" />
+    <Content Include="Help\StateBuilderCpp\examples\WashingMachine\html\closed.png" />
+    <Content Include="Help\StateBuilderCpp\examples\WashingMachine\html\doxygen.css" />
+    <Content Include="Help\StateBuilderCpp\examples\WashingMachine\html\doxygen.png" />
+    <Content Include="Help\StateBuilderCpp\examples\WashingMachine\html\files.html" />
+    <Content Include="Help\StateBuilderCpp\examples\WashingMachine\html\functions.html" />
+    <Content Include="Help\StateBuilderCpp\examples\WashingMachine\html\functions_func.html" />
+    <Content Include="Help\StateBuilderCpp\examples\WashingMachine\html\functions_vars.html" />
+    <Content Include="Help\StateBuilderCpp\examples\WashingMachine\html\globals.html" />
+    <Content Include="Help\StateBuilderCpp\examples\WashingMachine\html\globals_func.html" />
+    <Content Include="Help\StateBuilderCpp\examples\WashingMachine\html\index.html" />
+    <Content Include="Help\StateBuilderCpp\examples\WashingMachine\html\jquery.js" />
+    <Content Include="Help\StateBuilderCpp\examples\WashingMachine\html\main_8cpp.html" />
+    <Content Include="Help\StateBuilderCpp\examples\WashingMachine\html\main_8cpp_source.html" />
+    <Content Include="Help\StateBuilderCpp\examples\WashingMachine\html\main_8h.html" />
+    <Content Include="Help\StateBuilderCpp\examples\WashingMachine\html\main_8h_source.html" />
+    <Content Include="Help\StateBuilderCpp\examples\WashingMachine\html\nav_f.png" />
+    <Content Include="Help\StateBuilderCpp\examples\WashingMachine\html\nav_h.png" />
+    <Content Include="Help\StateBuilderCpp\examples\WashingMachine\html\open.png" />
+    <Content Include="Help\StateBuilderCpp\examples\WashingMachine\html\tabs.css" />
+    <Content Include="Help\StateBuilderCpp\examples\WashingMachine\html\tab_a.png" />
+    <Content Include="Help\StateBuilderCpp\examples\WashingMachine\html\tab_b.png" />
+    <Content Include="Help\StateBuilderCpp\examples\WashingMachine\html\tab_h.png" />
+    <Content Include="Help\StateBuilderCpp\examples\WashingMachine\html\tab_s.png" />
+    <Content Include="Help\StateBuilderCpp\examples\WashingMachine\html\_washing_machine_8cpp.html" />
+    <Content Include="Help\StateBuilderCpp\examples\WashingMachine\html\_washing_machine_8cpp_source.html" />
+    <Content Include="Help\StateBuilderCpp\examples\WashingMachine\html\_washing_machine_8fsmcpp.html" />
+    <Content Include="Help\StateBuilderCpp\examples\WashingMachine\html\_washing_machine_8fsmcpp_source.html" />
+    <Content Include="Help\StateBuilderCpp\examples\WashingMachine\html\_washing_machine_8h.html" />
+    <Content Include="Help\StateBuilderCpp\examples\WashingMachine\html\_washing_machine_8h_source.html" />
+    <Content Include="Help\StateBuilderCpp\state-machine-examples-cplusplus.aspx" />
+    <Content Include="Help\StateBuilderCpp\state-machine-observer-cplusplus.aspx" />
+    <Content Include="Help\StateBuilderCpp\statebuildercpp-state-machine-generator.aspx" />
+    <Content Include="Help\StateBuilderCpp\setup-statebuildercpp-build-boost-windows.aspx" />
+    <Content Include="Help\StateBuilderCpp\setup-statebuildercpp-build-qt-windows.aspx" />
+    <Content Include="Help\StateBuilderCpp\install-statebuildercpp-linux.aspx" />
+    <Content Include="Help\StateBuilderCpp\install-statebuildercpp-osx.aspx" />
+    <Content Include="Help\StateBuilderCpp\install-statebuildercpp-windows.aspx" />
+    <Content Include="Help\StateBuilderCpp\install-statebuildercpp.aspx" />
+    <Content Include="Help\StateBuilderCpp\run-statebuildercpp.aspx" />
+    <Content Include="Help\StateBuilderCpp\tutorial-state-machine-builder-cpp.aspx" />
+    <Content Include="Help\StateBuilderDotNet\context-statebuilderdotnet.aspx" />
+    <Content Include="Help\StateBuilderDotNet\examples\Door\html\annotated.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Door\html\bc_s.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\Door\html\classes.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Door\html\class_state_forge_1_1_examples_1_1_door_1_1_door-members.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Door\html\class_state_forge_1_1_examples_1_1_door_1_1_door.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Door\html\class_state_forge_1_1_examples_1_1_door_1_1_engine-members.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Door\html\class_state_forge_1_1_examples_1_1_door_1_1_engine.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Door\html\class_state_forge_1_1_examples_1_1_door_1_1_test_1_1_door_test-members.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Door\html\class_state_forge_1_1_examples_1_1_door_1_1_test_1_1_door_test.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Door\html\class_state_forge_1_1_examples_1_1_door_1_1_test_1_1_engine_mock-members.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Door\html\class_state_forge_1_1_examples_1_1_door_1_1_test_1_1_engine_mock.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Door\html\closed.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\Door\html\doxygen.css" />
+    <Content Include="Help\StateBuilderDotNet\examples\Door\html\doxygen.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\Door\html\files.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Door\html\functions.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Door\html\functions_func.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Door\html\functions_prop.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Door\html\functions_vars.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Door\html\hierarchy.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Door\html\index.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Door\html\interface_state_forge_1_1_examples_1_1_door_1_1_i_engine-members.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Door\html\interface_state_forge_1_1_examples_1_1_door_1_1_i_engine.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Door\html\jquery.js" />
+    <Content Include="Help\StateBuilderDotNet\examples\Door\html\namespaces.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Door\html\namespace_state_forge.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Door\html\namespace_state_forge_1_1_examples.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Door\html\namespace_state_forge_1_1_examples_1_1_door.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Door\html\namespace_state_forge_1_1_examples_1_1_door_1_1_test.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Door\html\nav_f.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\Door\html\nav_h.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\Door\html\open.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\Door\html\tabs.css" />
+    <Content Include="Help\StateBuilderDotNet\examples\Door\html\tab_a.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\Door\html\tab_b.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\Door\html\tab_h.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\Door\html\tab_s.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\Door\html\_door_8cs.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Door\html\_door_8cs_source.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Door\html\_door_8fsmcs.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Door\html\_door_8fsmcs_source.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Door\html\_door_test01_8fsmcs.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Door\html\_door_test01_8fsmcs_source.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Door\html\_door_test02_8fsmcs.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Door\html\_door_test02_8fsmcs_source.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Door\html\_door_test_8cs.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Door\html\_door_test_8cs_source.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Door\html\_properties_2_assembly_info_8cs.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Door\html\_properties_2_assembly_info_8cs_source.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Door\html\_test_2_door_test_2_properties_2_assembly_info_8cs.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Door\html\_test_2_door_test_2_properties_2_assembly_info_8cs_source.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\HelloWorld\html\annotated.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\HelloWorld\html\bc_s.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\HelloWorld\html\classes.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\HelloWorld\html\class_company_1_1_product_1_1_hello_world-members.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\HelloWorld\html\class_company_1_1_product_1_1_hello_world.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\HelloWorld\html\closed.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\HelloWorld\html\doxygen.css" />
+    <Content Include="Help\StateBuilderDotNet\examples\HelloWorld\html\doxygen.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\HelloWorld\html\files.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\HelloWorld\html\functions.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\HelloWorld\html\functions_func.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\HelloWorld\html\functions_vars.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\HelloWorld\html\index.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\HelloWorld\html\jquery.js" />
+    <Content Include="Help\StateBuilderDotNet\examples\HelloWorld\html\namespaces.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\HelloWorld\html\namespace_company.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\HelloWorld\html\namespace_company_1_1_product.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\HelloWorld\html\nav_f.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\HelloWorld\html\nav_h.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\HelloWorld\html\open.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\HelloWorld\html\tabs.css" />
+    <Content Include="Help\StateBuilderDotNet\examples\HelloWorld\html\tab_a.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\HelloWorld\html\tab_b.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\HelloWorld\html\tab_h.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\HelloWorld\html\tab_s.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\HelloWorld\html\_assembly_info_8cs.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\HelloWorld\html\_assembly_info_8cs_source.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\HelloWorld\html\_hello_world_8cs.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\HelloWorld\html\_hello_world_8cs_source.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\HelloWorld\html\_hello_world_8fsmcs.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\HelloWorld\html\_hello_world_8fsmcs_source.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Led\html\annotated.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Led\html\bc_s.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\Led\html\classes.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Led\html\class_state_forge_1_1_examples_1_1_led_1_1_led-members.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Led\html\class_state_forge_1_1_examples_1_1_led_1_1_led.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Led\html\class_state_forge_1_1_examples_1_1_led_1_1_led_app-members.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Led\html\class_state_forge_1_1_examples_1_1_led_1_1_led_app.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Led\html\closed.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\Led\html\doxygen.css" />
+    <Content Include="Help\StateBuilderDotNet\examples\Led\html\doxygen.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\Led\html\files.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Led\html\functions.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Led\html\functions_func.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Led\html\functions_vars.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Led\html\index.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Led\html\jquery.js" />
+    <Content Include="Help\StateBuilderDotNet\examples\Led\html\namespaces.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Led\html\namespace_state_forge.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Led\html\namespace_state_forge_1_1_examples.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Led\html\namespace_state_forge_1_1_examples_1_1_led.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Led\html\nav_f.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\Led\html\nav_h.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\Led\html\open.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\Led\html\tabs.css" />
+    <Content Include="Help\StateBuilderDotNet\examples\Led\html\tab_a.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\Led\html\tab_b.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\Led\html\tab_h.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\Led\html\tab_s.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\Led\html\_assembly_info_8cs.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Led\html\_assembly_info_8cs_source.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Led\html\_led_8cs.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Led\html\_led_8cs_source.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Led\html\_led_8fsmcs.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Led\html\_led_8fsmcs_source.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Light\html\annotated.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Light\html\bc_s.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\Light\html\classes.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Light\html\class_state_forge_1_1_examples_1_1_light_1_1_light-members.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Light\html\class_state_forge_1_1_examples_1_1_light_1_1_light.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Light\html\class_state_forge_1_1_examples_1_1_light_1_1_light_actuator-members.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Light\html\class_state_forge_1_1_examples_1_1_light_1_1_light_actuator.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Light\html\class_state_forge_1_1_examples_1_1_light_1_1_light_test_moq-members.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Light\html\class_state_forge_1_1_examples_1_1_light_1_1_light_test_moq.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Light\html\class_state_forge_1_1_examples_1_1_light_1_1_light_test_rhino-members.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Light\html\class_state_forge_1_1_examples_1_1_light_1_1_light_test_rhino.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Light\html\closed.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\Light\html\doxygen.css" />
+    <Content Include="Help\StateBuilderDotNet\examples\Light\html\doxygen.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\Light\html\files.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Light\html\functions.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Light\html\functions_func.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Light\html\functions_vars.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Light\html\hierarchy.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Light\html\index.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Light\html\interface_state_forge_1_1_examples_1_1_light_1_1_i_light_actuator-members.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Light\html\interface_state_forge_1_1_examples_1_1_light_1_1_i_light_actuator.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Light\html\jquery.js" />
+    <Content Include="Help\StateBuilderDotNet\examples\Light\html\namespaces.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Light\html\namespace_state_forge.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Light\html\namespace_state_forge_1_1_examples.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Light\html\namespace_state_forge_1_1_examples_1_1_light.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Light\html\nav_f.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\Light\html\nav_h.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\Light\html\open.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\Light\html\tabs.css" />
+    <Content Include="Help\StateBuilderDotNet\examples\Light\html\tab_a.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\Light\html\tab_b.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\Light\html\tab_h.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\Light\html\tab_s.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\Light\html\_light_8cs.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Light\html\_light_8cs_source.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Light\html\_light_8fsmcs.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Light\html\_light_8fsmcs_source.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Light\html\_light_test_moq_8cs.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Light\html\_light_test_moq_8cs_source.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Light\html\_light_test_rhino_8cs.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Light\html\_light_test_rhino_8cs_source.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Light\html\_properties_2_assembly_info_8cs.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Light\html\_properties_2_assembly_info_8cs_source.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Light\html\_test_2_light_test_moq_2_properties_2_assembly_info_8cs.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Light\html\_test_2_light_test_moq_2_properties_2_assembly_info_8cs_source.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Light\html\_test_2_light_test_rhino_2_properties_2_assembly_info_8cs.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Light\html\_test_2_light_test_rhino_2_properties_2_assembly_info_8cs_source.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Microwave\html\annotated.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Microwave\html\bc_s.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\Microwave\html\classes.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Microwave\html\class_state_forge_1_1_examples_1_1_microwave_1_1_microwave-members.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Microwave\html\class_state_forge_1_1_examples_1_1_microwave_1_1_microwave.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Microwave\html\class_state_forge_1_1_examples_1_1_microwave_1_1_microwave_actuator-members.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Microwave\html\class_state_forge_1_1_examples_1_1_microwave_1_1_microwave_actuator.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Microwave\html\class_state_forge_1_1_examples_1_1_microwave_1_1_microwave_test-members.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Microwave\html\class_state_forge_1_1_examples_1_1_microwave_1_1_microwave_test.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Microwave\html\closed.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\Microwave\html\doxygen.css" />
+    <Content Include="Help\StateBuilderDotNet\examples\Microwave\html\doxygen.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\Microwave\html\files.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Microwave\html\functions.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Microwave\html\functions_func.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Microwave\html\functions_prop.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Microwave\html\functions_vars.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Microwave\html\hierarchy.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Microwave\html\index.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Microwave\html\interface_state_forge_1_1_examples_1_1_microwave_1_1_i_microwave_actuator-members.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Microwave\html\interface_state_forge_1_1_examples_1_1_microwave_1_1_i_microwave_actuator.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Microwave\html\jquery.js" />
+    <Content Include="Help\StateBuilderDotNet\examples\Microwave\html\namespaces.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Microwave\html\namespace_state_forge.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Microwave\html\namespace_state_forge_1_1_examples.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Microwave\html\namespace_state_forge_1_1_examples_1_1_microwave.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Microwave\html\nav_f.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\Microwave\html\nav_h.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\Microwave\html\open.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\Microwave\html\tabs.css" />
+    <Content Include="Help\StateBuilderDotNet\examples\Microwave\html\tab_a.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\Microwave\html\tab_b.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\Microwave\html\tab_h.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\Microwave\html\tab_s.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\Microwave\html\_microwave_8cs.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Microwave\html\_microwave_8cs_source.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Microwave\html\_microwave_8fsmcs.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Microwave\html\_microwave_8fsmcs_source.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Microwave\html\_microwave_test_8cs.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Microwave\html\_microwave_test_8cs_source.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Microwave\html\_properties_2_assembly_info_8cs.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Microwave\html\_properties_2_assembly_info_8cs_source.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Microwave\html\_test_2_microwave_test_2_properties_2_assembly_info_8cs.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Microwave\html\_test_2_microwave_test_2_properties_2_assembly_info_8cs_source.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Ping\html\annotated.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Ping\html\bc_s.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\Ping\html\classes.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Ping\html\class_state_forge_1_1_examples_1_1_ping_1_1_ping-members.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Ping\html\class_state_forge_1_1_examples_1_1_ping_1_1_ping.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Ping\html\closed.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\Ping\html\doxygen.css" />
+    <Content Include="Help\StateBuilderDotNet\examples\Ping\html\doxygen.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\Ping\html\files.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Ping\html\functions.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Ping\html\functions_func.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Ping\html\functions_prop.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Ping\html\functions_vars.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Ping\html\index.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Ping\html\jquery.js" />
+    <Content Include="Help\StateBuilderDotNet\examples\Ping\html\namespaces.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Ping\html\namespace_state_forge.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Ping\html\namespace_state_forge_1_1_examples.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Ping\html\namespace_state_forge_1_1_examples_1_1_ping.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Ping\html\nav_f.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\Ping\html\nav_h.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\Ping\html\open.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\Ping\html\tabs.css" />
+    <Content Include="Help\StateBuilderDotNet\examples\Ping\html\tab_a.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\Ping\html\tab_b.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\Ping\html\tab_h.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\Ping\html\tab_s.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\Ping\html\_assembly_info_8cs.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Ping\html\_assembly_info_8cs_source.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Ping\html\_ping_8cs.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Ping\html\_ping_8cs_source.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Ping\html\_ping_8fsmcs.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Ping\html\_ping_8fsmcs_source.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Seminar\html\annotated.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Seminar\html\bc_s.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\Seminar\html\classes.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Seminar\html\class_state_forge_1_1_examples_1_1_seminar_1_1_seminar-members.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Seminar\html\class_state_forge_1_1_examples_1_1_seminar_1_1_seminar.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Seminar\html\class_state_forge_1_1_examples_1_1_seminar_1_1_seminar_actuator-members.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Seminar\html\class_state_forge_1_1_examples_1_1_seminar_1_1_seminar_actuator.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Seminar\html\class_state_forge_1_1_examples_1_1_seminar_1_1_seminar_test-members.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Seminar\html\class_state_forge_1_1_examples_1_1_seminar_1_1_seminar_test.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Seminar\html\class_state_forge_1_1_examples_1_1_seminar_1_1_student-members.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Seminar\html\class_state_forge_1_1_examples_1_1_seminar_1_1_student.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Seminar\html\closed.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\Seminar\html\doxygen.css" />
+    <Content Include="Help\StateBuilderDotNet\examples\Seminar\html\doxygen.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\Seminar\html\files.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Seminar\html\functions.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Seminar\html\functions_func.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Seminar\html\functions_prop.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Seminar\html\functions_vars.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Seminar\html\globals.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Seminar\html\globals_func.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Seminar\html\index.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Seminar\html\jquery.js" />
+    <Content Include="Help\StateBuilderDotNet\examples\Seminar\html\namespaces.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Seminar\html\namespace_state_forge.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Seminar\html\namespace_state_forge_1_1_examples.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Seminar\html\namespace_state_forge_1_1_examples_1_1_seminar.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Seminar\html\nav_f.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\Seminar\html\nav_h.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\Seminar\html\open.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\Seminar\html\tabs.css" />
+    <Content Include="Help\StateBuilderDotNet\examples\Seminar\html\tab_a.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\Seminar\html\tab_b.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\Seminar\html\tab_h.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\Seminar\html\tab_s.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\Seminar\html\_properties_2_assembly_info_8cs.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Seminar\html\_properties_2_assembly_info_8cs_source.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Seminar\html\_seminar_8cs.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Seminar\html\_seminar_8cs_source.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Seminar\html\_seminar_8fsmcs.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Seminar\html\_seminar_8fsmcs_source.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Seminar\html\_seminar_test_8cs.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Seminar\html\_seminar_test_8cs_source.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Seminar\html\_test_2_seminar_test_2_properties_2_assembly_info_8cs.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Seminar\html\_test_2_seminar_test_2_properties_2_assembly_info_8cs_source.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\TrafficLight\html\annotated.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\TrafficLight\html\bc_s.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\TrafficLight\html\classes.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\TrafficLight\html\class_state_forge_1_1_examples_1_1_traffic_light_1_1_light-members.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\TrafficLight\html\class_state_forge_1_1_examples_1_1_traffic_light_1_1_light.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\TrafficLight\html\class_state_forge_1_1_examples_1_1_traffic_light_1_1_traffic_light-members.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\TrafficLight\html\class_state_forge_1_1_examples_1_1_traffic_light_1_1_traffic_light.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\TrafficLight\html\class_state_forge_1_1_examples_1_1_traffic_light_1_1_traffic_light_test-members.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\TrafficLight\html\class_state_forge_1_1_examples_1_1_traffic_light_1_1_traffic_light_test.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\TrafficLight\html\closed.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\TrafficLight\html\doxygen.css" />
+    <Content Include="Help\StateBuilderDotNet\examples\TrafficLight\html\doxygen.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\TrafficLight\html\files.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\TrafficLight\html\functions.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\TrafficLight\html\functions_func.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\TrafficLight\html\functions_prop.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\TrafficLight\html\functions_vars.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\TrafficLight\html\index.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\TrafficLight\html\jquery.js" />
+    <Content Include="Help\StateBuilderDotNet\examples\TrafficLight\html\namespaces.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\TrafficLight\html\namespace_state_forge.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\TrafficLight\html\namespace_state_forge_1_1_examples.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\TrafficLight\html\namespace_state_forge_1_1_examples_1_1_traffic_light.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\TrafficLight\html\nav_f.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\TrafficLight\html\nav_h.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\TrafficLight\html\open.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\TrafficLight\html\tabs.css" />
+    <Content Include="Help\StateBuilderDotNet\examples\TrafficLight\html\tab_a.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\TrafficLight\html\tab_b.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\TrafficLight\html\tab_h.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\TrafficLight\html\tab_s.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\TrafficLight\html\_properties_2_assembly_info_8cs.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\TrafficLight\html\_properties_2_assembly_info_8cs_source.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\TrafficLight\html\_test_2_traffic_light_test_2_properties_2_assembly_info_8cs.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\TrafficLight\html\_test_2_traffic_light_test_2_properties_2_assembly_info_8cs_source.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\TrafficLight\html\_traffic_light_8cs.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\TrafficLight\html\_traffic_light_8cs_source.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\TrafficLight\html\_traffic_light_8fsmcs.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\TrafficLight\html\_traffic_light_8fsmcs_source.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\TrafficLight\html\_traffic_light_test_8cs.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\TrafficLight\html\_traffic_light_test_8cs_source.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Turnstile\html\annotated.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Turnstile\html\bc_s.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\Turnstile\html\classes.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Turnstile\html\class_state_forge_1_1_examples_1_1_turnstile_1_1_alarm-members.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Turnstile\html\class_state_forge_1_1_examples_1_1_turnstile_1_1_alarm.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Turnstile\html\class_state_forge_1_1_examples_1_1_turnstile_1_1_barrier-members.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Turnstile\html\class_state_forge_1_1_examples_1_1_turnstile_1_1_barrier.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Turnstile\html\class_state_forge_1_1_examples_1_1_turnstile_1_1_coin_machine-members.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Turnstile\html\class_state_forge_1_1_examples_1_1_turnstile_1_1_coin_machine.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Turnstile\html\class_state_forge_1_1_examples_1_1_turnstile_1_1_turnstile-members.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Turnstile\html\class_state_forge_1_1_examples_1_1_turnstile_1_1_turnstile.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Turnstile\html\class_state_forge_1_1_examples_1_1_turnstile_1_1_turnstile_test-members.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Turnstile\html\class_state_forge_1_1_examples_1_1_turnstile_1_1_turnstile_test.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Turnstile\html\closed.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\Turnstile\html\doxygen.css" />
+    <Content Include="Help\StateBuilderDotNet\examples\Turnstile\html\doxygen.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\Turnstile\html\files.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Turnstile\html\functions.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Turnstile\html\functions_func.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Turnstile\html\functions_vars.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Turnstile\html\index.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Turnstile\html\jquery.js" />
+    <Content Include="Help\StateBuilderDotNet\examples\Turnstile\html\namespaces.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Turnstile\html\namespace_state_forge.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Turnstile\html\namespace_state_forge_1_1_examples.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Turnstile\html\namespace_state_forge_1_1_examples_1_1_turnstile.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Turnstile\html\nav_f.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\Turnstile\html\nav_h.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\Turnstile\html\open.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\Turnstile\html\tabs.css" />
+    <Content Include="Help\StateBuilderDotNet\examples\Turnstile\html\tab_a.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\Turnstile\html\tab_b.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\Turnstile\html\tab_h.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\Turnstile\html\tab_s.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\Turnstile\html\_properties_2_assembly_info_8cs.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Turnstile\html\_properties_2_assembly_info_8cs_source.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Turnstile\html\_test_2_turnstile_test_2_properties_2_assembly_info_8cs.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Turnstile\html\_test_2_turnstile_test_2_properties_2_assembly_info_8cs_source.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Turnstile\html\_turnstile_8cs.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Turnstile\html\_turnstile_8cs_source.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Turnstile\html\_turnstile_8fsmcs.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Turnstile\html\_turnstile_8fsmcs_source.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Turnstile\html\_turnstile_test_8cs.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Turnstile\html\_turnstile_test_8cs_source.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Xmpp\html\annotated.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Xmpp\html\bc_s.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\Xmpp\html\classes.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Xmpp\html\class_state_forge_1_1_examples_1_1_xmpp_chat_1_1_chat_scenario-members.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Xmpp\html\class_state_forge_1_1_examples_1_1_xmpp_chat_1_1_chat_scenario.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Xmpp\html\class_state_forge_1_1_examples_1_1_xmpp_chat_1_1_chat_scenario_test-members.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Xmpp\html\class_state_forge_1_1_examples_1_1_xmpp_chat_1_1_chat_scenario_test.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Xmpp\html\class_state_forge_1_1_examples_1_1_xmpp_chat_1_1_client-members.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Xmpp\html\class_state_forge_1_1_examples_1_1_xmpp_chat_1_1_client.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Xmpp\html\class_state_forge_1_1_examples_1_1_xmpp_chat_1_1_properties_1_1_settings-members.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Xmpp\html\class_state_forge_1_1_examples_1_1_xmpp_chat_1_1_properties_1_1_settings.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Xmpp\html\class_state_forge_1_1_examples_1_1_xmpp_chat_1_1_xmpp_db-members.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Xmpp\html\class_state_forge_1_1_examples_1_1_xmpp_chat_1_1_xmpp_db.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Xmpp\html\closed.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\Xmpp\html\doxygen.css" />
+    <Content Include="Help\StateBuilderDotNet\examples\Xmpp\html\doxygen.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\Xmpp\html\files.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Xmpp\html\functions.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Xmpp\html\functions_evnt.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Xmpp\html\functions_func.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Xmpp\html\functions_prop.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Xmpp\html\functions_vars.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Xmpp\html\index.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Xmpp\html\interface_state_forge_1_1_examples_1_1_xmpp_chat_1_1_i_chat_scenario-members.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Xmpp\html\interface_state_forge_1_1_examples_1_1_xmpp_chat_1_1_i_chat_scenario.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Xmpp\html\jquery.js" />
+    <Content Include="Help\StateBuilderDotNet\examples\Xmpp\html\namespacemembers.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Xmpp\html\namespacemembers_func.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Xmpp\html\namespaces.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Xmpp\html\namespace_state_forge.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Xmpp\html\namespace_state_forge_1_1_examples.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Xmpp\html\namespace_state_forge_1_1_examples_1_1_xmpp_chat.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Xmpp\html\namespace_state_forge_1_1_examples_1_1_xmpp_chat_1_1_properties.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Xmpp\html\nav_f.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\Xmpp\html\nav_h.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\Xmpp\html\open.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\Xmpp\html\tabs.css" />
+    <Content Include="Help\StateBuilderDotNet\examples\Xmpp\html\tab_a.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\Xmpp\html\tab_b.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\Xmpp\html\tab_h.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\Xmpp\html\tab_s.png" />
+    <Content Include="Help\StateBuilderDotNet\examples\Xmpp\html\_assembly_info_8cs.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Xmpp\html\_assembly_info_8cs_source.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Xmpp\html\_chat_scenario_8cs.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Xmpp\html\_chat_scenario_8cs_source.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Xmpp\html\_chat_scenario_test_8cs.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Xmpp\html\_chat_scenario_test_8cs_source.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Xmpp\html\_client_8cs.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Xmpp\html\_client_8cs_source.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Xmpp\html\_i_chat_scenario_8cs.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Xmpp\html\_i_chat_scenario_8cs_source.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Xmpp\html\_settings_8_designer_8cs.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Xmpp\html\_settings_8_designer_8cs_source.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Xmpp\html\_test_chat01_8fsmcs.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Xmpp\html\_test_chat01_8fsmcs_source.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Xmpp\html\_test_login02_8fsmcs.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Xmpp\html\_test_login02_8fsmcs_source.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Xmpp\html\_test_login_8fsmcs.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Xmpp\html\_test_login_8fsmcs_source.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Xmpp\html\_test_open_close01_8fsmcs.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Xmpp\html\_test_open_close01_8fsmcs_source.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Xmpp\html\_test_open_close02_8fsmcs.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Xmpp\html\_test_open_close02_8fsmcs_source.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Xmpp\html\_test_register_new_account_8fsmcs.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Xmpp\html\_test_register_new_account_8fsmcs_source.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Xmpp\html\_test_roster_add_8fsmcs.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Xmpp\html\_test_roster_add_8fsmcs_source.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Xmpp\html\_test_roster_add_remove_8fsmcs.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Xmpp\html\_test_roster_add_remove_8fsmcs_source.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Xmpp\html\_test_subscription01_8fsmcs.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Xmpp\html\_test_subscription01_8fsmcs_source.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Xmpp\html\_test_un_subscribe_8fsmcs.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Xmpp\html\_test_un_subscribe_8fsmcs_source.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Xmpp\html\_xmpp_db_8cs.html" />
+    <Content Include="Help\StateBuilderDotNet\examples\Xmpp\html\_xmpp_db_8cs_source.html" />
+    <Content Include="Help\StateBuilderDotNet\state-machine-observer-dotnet.aspx" />
+    <Content Include="Help\StateBuilderDotNet\visual-studio-msbuild-statebuilderdotnet.aspx" />
+    <Content Include="Help\StateBuilderDotNet\install-statebuilderdotnet.aspx" />
+    <Content Include="Help\StateBuilderDotNet\state-machine-examples-dotnet.aspx" />
+    <Content Include="Help\StateBuilderDotNet\statebuilderdotnet-state-machine-generator.aspx" />
+    <Content Include="Help\StateBuilderDotNet\tutorial-state-machine-builder-dotnet.aspx" />
+    <Content Include="Help\StateBuilderJava\build-state-machine-examples-java.aspx" />
+    <Content Include="Help\StateBuilderJava\build-state-machine-examples-java-maven.aspx" />
+    <Content Include="Help\StateBuilderJava\build-state-machine-examples-java-ant.aspx" />
+    <Content Include="Help\StateBuilderJava\context-statebuilderjava.aspx" />
+    <Content Include="Help\StateBuilderJava\install-statebuilderjava.aspx" />
+    <Content Include="Help\StateBuilderJava\state-machine-examples-java.aspx" />
+    <Content Include="Help\StateBuilderJava\state-machine-observer-java.aspx" />
+    <Content Include="Help\StateBuilderJava\statebuilderjava-state-machine-generator.aspx" />
+    <Content Include="Help\StateBuilderJava\tutorial-state-machine-builder-java.aspx" />
+    <Content Include="sitemaps.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="StateMachineDiagram\BrowserCheck.js" />
+    <Content Include="StateMachineDiagram\images\buttonbg.png" />
+    <Content Include="StateMachineDiagram\images\icon_color_arrow.gif" />
+    <Content Include="StateMachineDiagram\images\menuhoverbg.png" />
+    <Content Include="StateMachineDiagram\images\theme_90_black_matte.png" />
+    <Content Include="StateMachineDiagram\images\theme_90_black_tie.png" />
+    <Content Include="StateMachineDiagram\images\theme_90_blitzer.png" />
+    <Content Include="StateMachineDiagram\images\theme_90_cupertino.png" />
+    <Content Include="StateMachineDiagram\images\theme_90_dark_hive.png" />
+    <Content Include="StateMachineDiagram\images\theme_90_dot_luv.png" />
+    <Content Include="StateMachineDiagram\images\theme_90_eggplant.png" />
+    <Content Include="StateMachineDiagram\images\theme_90_excite_bike.png" />
+    <Content Include="StateMachineDiagram\images\theme_90_flick.png" />
+    <Content Include="StateMachineDiagram\images\theme_90_hot_sneaks.png" />
+    <Content Include="StateMachineDiagram\images\theme_90_humanity.png" />
+    <Content Include="StateMachineDiagram\images\theme_90_le_frog.png" />
+    <Content Include="StateMachineDiagram\images\theme_90_mint_choco.png" />
+    <Content Include="StateMachineDiagram\images\theme_90_overcast.png" />
+    <Content Include="StateMachineDiagram\images\theme_90_pepper_grinder.png" />
+    <Content Include="StateMachineDiagram\images\theme_90_smoothness.png" />
+    <Content Include="StateMachineDiagram\images\theme_90_south_street.png" />
+    <Content Include="StateMachineDiagram\images\theme_90_start_menu.png" />
+    <Content Include="StateMachineDiagram\images\theme_90_sunny.png" />
+    <Content Include="StateMachineDiagram\images\theme_90_swanky_purse.png" />
+    <Content Include="StateMachineDiagram\images\theme_90_trontastic.png" />
+    <Content Include="StateMachineDiagram\images\theme_90_ui_dark.png" />
+    <Content Include="StateMachineDiagram\images\theme_90_ui_light.png" />
+    <Content Include="StateMachineDiagram\images\theme_90_windoze.png" />
+    <Content Include="StateMachineDiagram\images\ui-bg_diagonals-thick_90_eeeeee_40x40.png" />
+    <Content Include="StateMachineDiagram\images\ui-bg_flat_15_cd0a0a_40x100.png" />
+    <Content Include="StateMachineDiagram\images\ui-bg_glass_100_e4f1fb_1x400.png" />
+    <Content Include="StateMachineDiagram\images\ui-bg_glass_50_3baae3_1x400.png" />
+    <Content Include="StateMachineDiagram\images\ui-bg_glass_80_d7ebf9_1x400.png" />
+    <Content Include="StateMachineDiagram\images\ui-bg_highlight-hard_100_f2f5f7_1x100.png" />
+    <Content Include="StateMachineDiagram\images\ui-bg_highlight-hard_70_000000_1x100.png" />
+    <Content Include="StateMachineDiagram\images\ui-bg_highlight-soft_100_deedf7_1x100.png" />
+    <Content Include="StateMachineDiagram\images\ui-bg_highlight-soft_25_ffef8f_1x100.png" />
+    <Content Include="StateMachineDiagram\images\ui-icons_2694e8_256x240.png" />
+    <Content Include="StateMachineDiagram\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="StateMachineDiagram\images\ui-icons_3d80b3_256x240.png" />
+    <Content Include="StateMachineDiagram\images\ui-icons_72a7cf_256x240.png" />
+    <Content Include="StateMachineDiagram\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="StateMachineDiagram\Img\DoorStateMachine.png" />
+    <Content Include="StateMachineDiagram\Img\HelloWorldStateMachine.png" />
+    <Content Include="StateMachineDiagram\Img\LightStateMachine.png" />
+    <Content Include="StateMachineDiagram\Img\PingStateMachine.png" />
+    <Content Include="StateMachineDiagram\Img\TrafficLightStateMachine.png" />
+    <Content Include="StateMachineDiagram\Img\UrlGetStateMachine.png" />
+    <Content Include="StateMachineDiagram\Img\WashingMachineStateMachine.png" />
+    <Content Include="StateMachineDiagram\Img\XmppRosterAddStateMachine.png" />
+    <Content Include="StateMachineDiagram\indent.xsl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="StateMachineDiagram\jquery-1.6.1.min.js" />
+    <Content Include="StateMachineDiagram\jquery-ui-1.8.16.custom.css" />
+    <Content Include="StateMachineDiagram\jquery.themeswitcher.js" />
+    <Content Include="StateMachineDiagram\modernizr.js" />
+    <Content Include="StateMachineDiagram\src\ace.js" />
+    <Content Include="StateMachineDiagram\src\cockpit.js" />
+    <Content Include="StateMachineDiagram\src\keybinding-emacs.js" />
+    <Content Include="StateMachineDiagram\src\keybinding-vim.js" />
+    <Content Include="StateMachineDiagram\src\mode-coffee.js" />
+    <Content Include="StateMachineDiagram\src\mode-css.js" />
+    <Content Include="StateMachineDiagram\src\mode-c_cpp.js" />
+    <Content Include="StateMachineDiagram\src\mode-html.js" />
+    <Content Include="StateMachineDiagram\src\mode-java.js" />
+    <Content Include="StateMachineDiagram\src\mode-javascript.js" />
+    <Content Include="StateMachineDiagram\src\mode-php.js" />
+    <Content Include="StateMachineDiagram\src\mode-python.js" />
+    <Content Include="StateMachineDiagram\src\mode-ruby.js" />
+    <Content Include="StateMachineDiagram\src\mode-xml.js" />
+    <Content Include="StateMachineDiagram\src\theme-clouds.js" />
+    <Content Include="StateMachineDiagram\src\theme-clouds_midnight.js" />
+    <Content Include="StateMachineDiagram\src\theme-cobalt.js" />
+    <Content Include="StateMachineDiagram\src\theme-dawn.js" />
+    <Content Include="StateMachineDiagram\src\theme-eclipse.js" />
+    <Content Include="StateMachineDiagram\src\theme-idle_fingers.js" />
+    <Content Include="StateMachineDiagram\src\theme-kr_theme.js" />
+    <Content Include="StateMachineDiagram\src\theme-monokai.js" />
+    <Content Include="StateMachineDiagram\src\theme-mono_industrial.js" />
+    <Content Include="StateMachineDiagram\src\theme-pastel_on_dark.js" />
+    <Content Include="StateMachineDiagram\src\theme-twilight.js" />
+    <Content Include="StateMachineDiagram\src\worker-javascript.js" />
+    <Content Include="StateMachineDiagram\StateMachineDiagram.css" />
+    <Content Include="StateMachineDiagram\StateMachineDiagram.html" />
+    <Content Include="StateMachineDiagram\StateMachineDiagram.js" />
+    <Content Include="StateMachineDiagram\StateMachineDiagramMinified.css" />
+    <Content Include="StateMachineDiagram\StateMachineDiagramMinified.js" />
+    <Content Include="StateMachineDiagram\StateMachineExamples.js" />
+    <Content Include="StateMachineDiagram\StateMachineModel.js" />
+    <Content Include="StateMachineDiagram\StateMachineView.js" />
+    <Content Include="Views\DeployInstall\StateBuilderCpp.aspx" />
+    <Content Include="Views\DeployInstall\StateBuilderDotNet.aspx" />
+    <Content Include="Views\DeployInstall\StateBuilderJava.aspx" />
+    <Content Include="Views\DeployUninstall\StateBuilderJava.aspx" />
+    <Content Include="Views\DeployUninstall\StateBuilderCpp.aspx" />
+    <Content Include="Views\Deploy\StateBuilderDotNetInstalled.aspx" />
+    <Content Include="Views\Deploy\StateBuilderDotNetUninstalled.aspx" />
+    <Content Include="Views\DeployUninstall\StateBuilderDotNet.aspx" />
+    <Content Include="Views\Home\Buy.aspx" />
+    <Content Include="Views\Home\License.aspx" />
+    <Content Include="Views\Home\Documentation.aspx" />
+    <Content Include="Views\Home\Download.aspx" />
+    <Content Include="Views\Home\Faq.aspx" />
+    <Content Include="Views\Home\Features.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\MicrosoftAjax.js" />
+    <Content Include="Scripts\MicrosoftAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.debug.js" />
+    <Content Include="Views\Account\ChangePassword.aspx" />
+    <Content Include="Views\Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Views\Account\LogOn.aspx" />
+    <Content Include="Views\Account\Register.aspx" />
+    <Content Include="Views\Home\About.aspx" />
+    <Content Include="Views\Home\Index.aspx" />
+    <Content Include="Views\Shared\Error.aspx" />
+    <Content Include="Views\Shared\LogOnUserControl.ascx" />
+    <Content Include="Views\Shared\Site.Master" />
+    <Content Include="Views\Web.config" />
+    <Content Include="y_key_d32ee96fa203c52f.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Content\js\jquery-ui\css\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\js\syntaxhighlighter\compass\config.rb" />
+    <None Include="Content\js\syntaxhighlighter\compass\shCore.scss" />
+    <None Include="Content\js\syntaxhighlighter\compass\shCoreDefault.scss" />
+    <None Include="Content\js\syntaxhighlighter\compass\shCoreDjango.scss" />
+    <None Include="Content\js\syntaxhighlighter\compass\shCoreEclipse.scss" />
+    <None Include="Content\js\syntaxhighlighter\compass\shCoreEmacs.scss" />
+    <None Include="Content\js\syntaxhighlighter\compass\shCoreFadeToGrey.scss" />
+    <None Include="Content\js\syntaxhighlighter\compass\shCoreMDUltra.scss" />
+    <None Include="Content\js\syntaxhighlighter\compass\shCoreMidnight.scss" />
+    <None Include="Content\js\syntaxhighlighter\compass\shCoreRDark.scss" />
+    <None Include="Content\js\syntaxhighlighter\compass\shThemeDefault.scss" />
+    <None Include="Content\js\syntaxhighlighter\compass\shThemeDjango.scss" />
+    <None Include="Content\js\syntaxhighlighter\compass\shThemeEclipse.scss" />
+    <None Include="Content\js\syntaxhighlighter\compass\shThemeEmacs.scss" />
+    <None Include="Content\js\syntaxhighlighter\compass\shThemeFadeToGrey.scss" />
+    <None Include="Content\js\syntaxhighlighter\compass\shThemeMDUltra.scss" />
+    <None Include="Content\js\syntaxhighlighter\compass\shThemeMidnight.scss" />
+    <None Include="Content\js\syntaxhighlighter\compass\shThemeRDark.scss" />
+    <None Include="Content\js\syntaxhighlighter\compass\_theme_template.scss" />
+    <None Include="Content\js\syntaxhighlighter\LGPL-LICENSE" />
+    <None Include="Content\js\syntaxhighlighter\MIT-LICENSE" />
+    <None Include="Content\js\yui\build\assets\skins\sam\sprite.psd" />
+    <None Include="Content\PIE\PIE.php" />
+    <Content Include="examples\cpp\Ping.fsmcpp">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="examples\cpp\Robot.fsmcpp">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="examples\dotnet\Light.fsmcs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="examples\cpp\Acs.fsmcpp">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="examples\cpp\AcsClient.fsmcpp">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="examples\cpp\AcsConnection.fsmcpp">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="examples\cpp\AcsRequestDownload.fsmcpp">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="examples\cpp\AcsRequestReboot.fsmcpp">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="examples\cpp\Door.fsmcpp">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="examples\cpp\DoorTester.fsmcpp">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="examples\cpp\HelloWorld.fsmcpp">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="examples\cpp\Led.fsmcpp">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="examples\cpp\Light.fsmcpp">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="examples\cpp\LoginMvc.fsmcpp">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="examples\cpp\Microwave.fsmcpp">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="examples\cpp\Microwave02.fsmcpp">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="examples\cpp\Samek.fsmcpp">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="examples\cpp\Tr69Client.fsmcpp">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="examples\cpp\Tr69Connection.fsmcpp">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="examples\cpp\Tr69ConnectionRequestResponder.fsmcpp">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="examples\cpp\Tr69ConnectionRequestServer.fsmcpp">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="examples\cpp\TrafficLight.fsmcpp">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="examples\cpp\UrlGet.fsmcpp">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="examples\cpp\WashingMachine.fsmcpp">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="examples\dotnet\CallBase01.fsmcs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="examples\dotnet\CallControl.fsmcs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="examples\dotnet\CallDirector.fsmcs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="examples\dotnet\Door.fsmcs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="examples\dotnet\DoorTest01.fsmcs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="examples\dotnet\DoorTest02.fsmcs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="examples\dotnet\EndpointTest.fsmcs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="examples\dotnet\Executor.fsmcs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="examples\dotnet\HelloWorld.fsmcs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="examples\dotnet\Led.fsmcs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="examples\dotnet\Microwave.fsmcs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="examples\dotnet\Ping.fsmcs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="examples\dotnet\Seminar.fsmcs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="examples\dotnet\TestLogin.fsmcs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="examples\dotnet\TestLogin02.fsmcs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="examples\dotnet\TestOpenClose01.fsmcs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="examples\dotnet\TestOpenClose02.fsmcs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="examples\dotnet\TestRegisterNewAccount.fsmcs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="examples\dotnet\TestRosterAdd.fsmcs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="examples\dotnet\TestRosterAddRemove.fsmcs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="examples\dotnet\TestSubscription01.fsmcs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="examples\dotnet\TestUnSubscribe.fsmcs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="examples\dotnet\Trader.fsmcs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="examples\dotnet\TrafficLight.fsmcs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="examples\dotnet\Turnstile.fsmcs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="examples\dotnet\WashingMachine.fsmcs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="examples\java\HelloWorld.fsmjava">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="examples\java\Microwave.fsmjava">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="examples\java\Ping.fsmjava">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="examples\java\TrafficLight.fsmjava">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="examples\java\PelicanCrossing.fsmjava" />
+    <Content Include="examples\java\Concurrent.fsmjava" />
+    <Content Include="xsd\StateMachineCpp-v1.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="xsd\StateMachineDotNet-v1.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="xsd\StateMachineJava-v1.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Help\StateBuilderCpp\HelpCpp.master" />
+    <Content Include="Help\HelpMain.master" />
+    <Content Include="Help\StateBuilderJava\HelpJava.master" />
+    <Content Include="Help\StateBuilderDotNet\HelpDotNet.master" />
+    <Content Include="examples\dotnet\BookingProcess.fsmcs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="examples\java\FeedFetcher.fsmjava">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="examples\java\RippleWsClient.fsmjava">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target> -->
+  <Target Name="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(ProjectDir)" />
+  </Target>
+  <UsingTask TaskName="CssCompressorTask" AssemblyFile="C:\Users\frederic\Software\Yahoo.Yui.Compressor v2.2.0.0\Yahoo.Yui.Compressor.Build.MsBuild.dll" />
+  <UsingTask TaskName="JavaScriptCompressorTask" AssemblyFile="C:\Users\frederic\Software\Yahoo.Yui.Compressor v2.2.0.0\Yahoo.Yui.Compressor.Build.MsBuild.dll" />
+  <Target Name="Minify">
+    <ItemGroup>
+      <CssFiles Include="StateMachineDiagram/StateMachineDiagram.css" />
+      <CssFiles Include="Content/js/qtip/jquery.qtip.min.css" />
+      <CssFiles Include="Content/js/jquery-drill-down-menu-plugin/css/dcdrilldown.css" />
+      <CssFiles Include="Content/js/jquery-drill-down-menu-plugin/css/skins/grey.css" />
+      <CssFiles Include="Content/js/jquery-drill-down-menu-plugin/css/skins/demo.css" />
+      <CssFiles Include="StateMachineDiagram/jquery-ui-1.8.16.custom.css" />
+      <CssFiles Include="Content/js/jcarousel/skins/ie7/skin.css" />
+      <!--
+			<JavaScriptFiles Include="StateMachineDiagram/src/mode-xml.js"/>
+			<JavaScriptFiles Include="StateMachineDiagram/src/theme-clouds.js"/>
+			<JavaScriptFiles Include="StateMachineDiagram/src/ace.js"/>
+			-->
+      <JavaScriptFiles Include="StateMachineDiagram/modernizr.js" />
+      <JavaScriptFiles Include="Content/js/qtip/jquery.qtip.min.js" />
+      <JavaScriptFiles Include="Content/js/jquery-drill-down-menu-plugin/js/jquery.cookie.js" />
+      <JavaScriptFiles Include="Content/js/jquery-drill-down-menu-plugin/js/jquery.dcdrilldown.1.2.js" />
+      <JavaScriptFiles Include="StateMachineDiagram/jquery.themeswitcher.js" />
+      <JavaScriptFiles Include="StateMachineDiagram/BrowserCheck.js" />
+      <JavaScriptFiles Include="StateMachineDiagram/StateMachineModel.js" />
+      <JavaScriptFiles Include="StateMachineDiagram/StateMachineView.js" />
+      <JavaScriptFiles Include="StateMachineDiagram/StateMachineExamples.js" />
+      <JavaScriptFiles Include="StateMachineDiagram/StateMachineDiagram.js" />
+    </ItemGroup>
+    <CssCompressorTask SourceFiles="@(CssFiles)" DeleteSourceFiles="false" OutputFile="StateMachineDiagram/StateMachineDiagramMinified.css" CompressionType="Standard" LoggingType="Info" PreserveComments="false" LineBreakPosition="-1" />
+    <JavaScriptCompressorTask SourceFiles="@(JavaScriptFiles)" DeleteSourceFiles="false" OutputFile="StateMachineDiagram/StateMachineDiagramMinified.js" CompressionType="Standard" ObfuscateJavaScript="False" PreserveAllSemicolons="False" DisableOptimizations="No" EncodingType="Default" LineBreakPosition="-1" LoggingType="Info" ThreadCulture="en-au" IsEvalIgnored="false" />
+  </Target>
+  <ItemGroup>
+    <JSMin Include="Content/js/jquery-ui/js/jquery-1.6.2.min.js" />
+    <JSMin Include="Content/js/jquery-ui/js/jquery-ui-1.8.16.custom.min.js" />
+    <JSMin Include="StateMachineDiagram/src/mode-xml.js" />
+    <JSMin Include="StateMachineDiagram/src/theme-clouds.js" />
+    <JSMin Include="StateMachineDiagram/src/ace.js" />
+    <JSMin Include="Content/js/jquery-drill-down-menu-plugin/js/jquery.dcdrilldown.1.2.js" />
+    <JSMin Include="Content/js/jquery-drill-down-menu-plugin/js/jquery.cookie.js" />
+    <JSMin Include="Content/js/qtip/jquery.qtip.min.js" />
+    <JSMin Include="StateMachineDiagram/jquery.themeswitcher.js" />
+    <JSMin Include="StateMachineDiagram/BrowserCheck.js" />
+    <JSMin Include="StateMachineDiagram/StateMachineModel.js" />
+    <JSMin Include="StateMachineDiagram/StateMachineView.js" />
+    <JSMin Include="StateMachineDiagram/StateMachineExamples.js" />
+    <JSMin Include="StateMachineDiagram/StateMachineDiagram.js" />
+  </ItemGroup>
+  <Target Name="Closure">
+    <Message Text="Closure" />
+    <Exec Command="java -jar closure\compiler.jar --js @(JSMin, ' ') --js_output_file StateMachineDiagram\StateMachineDiagramClosure.js" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49651</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

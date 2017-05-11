@@ -1,0 +1,1 @@
+"C:\Program Files\IIS\Microsoft Web Deploy\msdeploy.exe" -verb:dump -source:iisapp="stateforge.com",computername="https://eweb704.discountasp.net:8172/msdeploy.axd?site=stateforge.com",username=stateforgec,password=mypassword,authType=basic -allowUntrusted

@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.1 "
+   sodipodi:docname="StateMachineTools.svg">
+  <defs
+     id="defs4">
+    <marker
+       inkscape:stockid="Arrow1Mstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Mstart"
+       style="overflow:visible">
+      <path
+         id="path4062"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;marker-start:none"
+         transform="scale(0.4) translate(10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Mend"
+       style="overflow:visible;">
+      <path
+         id="path3934"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;marker-start:none;"
+         transform="scale(0.4) rotate(180) translate(10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="EmptyTriangleOutL"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="EmptyTriangleOutL"
+       style="overflow:visible">
+      <path
+         id="path4086"
+         d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z "
+         style="fill-rule:evenodd;fill:#FFFFFF;stroke:#000000;stroke-width:1.0pt;marker-start:none"
+         transform="scale(0.8) translate(-6,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lend"
+       style="overflow:visible;">
+      <path
+         id="path3928"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;marker-start:none;"
+         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow2Lend"
+       style="overflow:visible;">
+      <path
+         id="path3946"
+         style="font-size:12.0;fill-rule:evenodd;stroke-width:0.62500000;stroke-linejoin:round;"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="scale(1.1) rotate(180) translate(1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mend-8"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3934-6"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mend-5"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3934-1"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mend-55"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3934-0"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mend-2"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3934-9"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mend-0"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3934-8"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mstart"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mstart-2"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4062-8"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(0.4,0,0,0.4,4,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mend-0-0"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3934-8-1"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.979899"
+     inkscape:cx="244.87167"
+     inkscape:cy="719.30288"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:snap-grids="true"
+     inkscape:window-width="1280"
+     inkscape:window-height="782"
+     inkscape:window-x="2"
+     inkscape:window-y="1"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#c0d2e4;fill-opacity:1;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;opacity:1"
+       id="rect5379"
+       width="400"
+       height="200"
+       x="36.36549"
+       y="253.84085"
+       ry="1.9890981"
+       inkscape:export-filename="C:\Users\frederic\Documents\projects\StateForgeWebSite\dev\StateForgeWebSite\Content\Images\StateMachineTools.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="fill:#b4e2ff;fill-opacity:1"
+       id="rect2985"
+       width="130"
+       height="118.9149"
+       x="188.65697"
+       y="276.21982"
+       ry="5.3139024"
+       inkscape:export-filename="C:\Users\frederic\Documents\projects\StateForgeWebSite\dev\StateForgeWebSite\Content\Images\StateMachineTools.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <text
+       xml:space="preserve"
+       style="font-size:13.16797543px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="206.41557"
+       y="339.08499"
+       id="text2989"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="C:\Users\frederic\Documents\projects\StateForgeWebSite\dev\StateForgeWebSite\Content\Images\StateMachineTools.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan2991"
+         x="206.41557"
+         y="339.08499">Code generators</tspan></text>
+    <rect
+       style="fill:#b4e2ff;fill-opacity:1"
+       id="rect2993"
+       width="108.83733"
+       height="158.8891"
+       x="49.129665"
+       y="276.89169"
+       ry="3.3261883"
+       inkscape:export-filename="C:\Users\frederic\Documents\projects\StateForgeWebSite\dev\StateForgeWebSite\Content\Images\StateMachineTools.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="90"
+       y="335.21933"
+       id="text2995"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan2997"
+         x="90"
+         y="335.21933" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:15.04911423px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="61.710434"
+       y="352.82245"
+       id="text3003"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="C:\Users\frederic\Documents\projects\StateForgeWebSite\dev\StateForgeWebSite\Content\Images\StateMachineTools.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan3005"
+         x="61.710434"
+         y="352.82245"
+         style="font-size:13.16797543px">State machine</tspan><tspan
+         sodipodi:role="line"
+         x="61.710434"
+         y="369.28244"
+         id="tspan3012"
+         style="font-size:13.16797543px"> xml model</tspan></text>
+    <rect
+       style="fill:#b4e2ff;fill-opacity:1"
+       id="rect2985-3"
+       width="130"
+       height="35.607285"
+       x="188.65697"
+       y="400.29834"
+       ry="3.755147"
+       inkscape:export-filename="C:\Users\frederic\Documents\projects\StateForgeWebSite\dev\StateForgeWebSite\Content\Images\StateMachineTools.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <text
+       xml:space="preserve"
+       style="font-size:13.16797543px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="201.50354"
+       y="421.50974"
+       id="text2989-5"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="C:\Users\frederic\Documents\projects\StateForgeWebSite\dev\StateForgeWebSite\Content\Images\StateMachineTools.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan2991-1"
+         x="201.50354"
+         y="421.50974">Statechart editor</tspan></text>
+    <g
+       id="g3147"
+       transform="matrix(0.94056968,0,0,0.94056968,-32.007608,13.325867)"
+       inkscape:export-filename="C:\Users\frederic\Documents\projects\StateForgeWebSite\dev\StateForgeWebSite\Content\Images\StateMachineTools.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <rect
+         ry="3.9924176"
+         y="321.55017"
+         x="403.39285"
+         height="37.857143"
+         width="78"
+         id="rect2985-7"
+         style="fill:#b4e2ff;fill-opacity:1" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text2989-0"
+         y="345.48947"
+         x="429.19949"
+         style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           y="345.48947"
+           x="429.19949"
+           id="tspan2991-7"
+           sodipodi:role="line">C++</tspan></text>
+    </g>
+    <g
+       id="g3142"
+       transform="matrix(0.94056968,0,0,0.94056968,-32.007608,13.325867)"
+       inkscape:export-filename="C:\Users\frederic\Documents\projects\StateForgeWebSite\dev\StateForgeWebSite\Content\Images\StateMachineTools.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <rect
+         ry="3.9924176"
+         y="277.97568"
+         x="403.39285"
+         height="37.857143"
+         width="78"
+         id="rect2985-7-3"
+         style="fill:#b4e2ff;fill-opacity:1" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text2989-0-3"
+         y="301.91498"
+         x="433.18143"
+         style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           y="301.91498"
+           x="433.18143"
+           id="tspan2991-7-7"
+           sodipodi:role="line">C#</tspan></text>
+    </g>
+    <rect
+       style="fill:#b4e2ff;fill-opacity:1"
+       id="rect2985-7-3-4"
+       width="73.364441"
+       height="35.607285"
+       x="347.4115"
+       y="356.79126"
+       ry="3.755147"
+       inkscape:export-filename="C:\Users\frederic\Documents\projects\StateForgeWebSite\dev\StateForgeWebSite\Content\Images\StateMachineTools.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <text
+       xml:space="preserve"
+       style="font-size:13.16797543px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="370.28595"
+       y="379.22745"
+       id="text2989-0-3-7"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="C:\Users\frederic\Documents\projects\StateForgeWebSite\dev\StateForgeWebSite\Content\Images\StateMachineTools.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan2991-7-7-5"
+         x="370.28595"
+         y="379.22745">Java</tspan></text>
+    <rect
+       style="fill:#b4e2ff;fill-opacity:1"
+       id="rect2985-7-3-9"
+       width="73.364441"
+       height="35.607285"
+       x="347.4115"
+       y="399.62653"
+       ry="3.755147"
+       inkscape:export-filename="C:\Users\frederic\Documents\projects\StateForgeWebSite\dev\StateForgeWebSite\Content\Images\StateMachineTools.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <text
+       xml:space="preserve"
+       style="font-size:13.16797543px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="353.81638"
+       y="420.25253"
+       id="text2989-0-3-8"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="C:\Users\frederic\Documents\projects\StateForgeWebSite\dev\StateForgeWebSite\Content\Images\StateMachineTools.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan2991-7-7-3"
+         x="353.81638"
+         y="420.25253">Statechart</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.18504679;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#Arrow1Mstart);marker-mid:none;marker-end:url(#Arrow1Mend-0)"
+       d="m 162.49337,418.33382 18.65135,-0.0171"
+       id="path3152"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\frederic\Documents\projects\StateForgeWebSite\dev\StateForgeWebSite\Content\Images\StateMachineTools.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.10091019px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-mid:none;marker-end:url(#Arrow1Mend)"
+       d="m 163.30801,335.68767 13.35026,-0.0206"
+       id="path3152-0"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\frederic\Documents\projects\StateForgeWebSite\dev\StateForgeWebSite\Content\Images\StateMachineTools.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.10091019px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-mid:none;marker-end:url(#Arrow1Mend)"
+       d="m 327.07026,292.59541 13.35027,-0.0206"
+       id="path3152-0-7"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\frederic\Documents\projects\StateForgeWebSite\dev\StateForgeWebSite\Content\Images\StateMachineTools.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.10091019px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-mid:none;marker-end:url(#Arrow1Mend)"
+       d="m 327.07026,333.58027 13.35027,-0.0206"
+       id="path3152-0-3"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\frederic\Documents\projects\StateForgeWebSite\dev\StateForgeWebSite\Content\Images\StateMachineTools.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.10091019px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-mid:none;marker-end:url(#Arrow1Mend)"
+       d="m 327.07026,374.60531 13.35027,-0.0206"
+       id="path3152-0-0"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\frederic\Documents\projects\StateForgeWebSite\dev\StateForgeWebSite\Content\Images\StateMachineTools.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.10091019px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-mid:none;marker-end:url(#Arrow1Mend)"
+       d="m 329.07026,417.44058 13.35027,-0.0206"
+       id="path3152-0-71"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\frederic\Documents\projects\StateForgeWebSite\dev\StateForgeWebSite\Content\Images\StateMachineTools.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.18504679;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#Arrow1Mstart);marker-mid:none;marker-end:url(#Arrow1Mend-0)"
+       d="m 324.04497,417.99493 18.65135,-0.0171"
+       id="path3152-8"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\frederic\Documents\projects\StateForgeWebSite\dev\StateForgeWebSite\Content\Images\StateMachineTools.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+  </g>
+</svg>

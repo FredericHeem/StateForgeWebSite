@@ -1,0 +1,31 @@
+﻿<%@ Master Language="C#" MasterPageFile="/Help/Help.master" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="TitleContent" runat="server">
+    <asp:ContentPlaceHolder ID="TitleContent" runat="server" />
+</asp:Content>
+<asp:Content ID="Content4" ContentPlaceHolderID="HeaderTitle" runat="server">
+    StateBuilderDotNet - state machine code generator for C# and VB.NET
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="MetaInfo" runat="server">
+    <asp:ContentPlaceHolder ID="MetaInfo" runat="server" />
+</asp:Content>
+<asp:Content ID="Content5" ContentPlaceHolderID="HeaderEpilogue" runat="server">
+    <asp:ContentPlaceHolder ID="HeaderEpilogue" runat="server" />
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="NavMain" runat="server">
+    <div id="navigation">
+        <ul id="browser">
+            <li><span><a href="../state-machine-tools.aspx">Help Home</a></span></li>
+            <li><span><a href="statebuilderdotnet-state-machine-generator.aspx">Welcome</a></span></li>
+            <li><span><a href="../state-machine-features.aspx">Features</a></span></li>
+            <li><span><a href="install-statebuilderdotnet.aspx">Install</a></span> </li>
+            <li><span><a href="tutorial-state-machine-builder-dotnet.aspx">Tutorial</a></span> </li>
+            <li><span><a href="state-machine-examples-dotnet.aspx">Examples</a></span> </li>
+            <li><span><a href="visual-studio-msbuild-statebuilderdotnet.aspx">Build integration</a></span></li>
+            <li><span><a href="context-statebuilderdotnet.aspx">Context</a></span> </li>
+        </ul>
+    </div>
+    <div id="main">
+        <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+    </div>
+</asp:Content>

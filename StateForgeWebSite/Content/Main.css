@@ -1,0 +1,63 @@
+﻿#MainColumnLeft
+{
+    background-image: none;
+    float:left;
+    width:300px; 
+    border: 1 solid black;
+    margin-right: 15px;    
+}
+
+#MainColumnRight
+{
+    
+    float:left;
+    width:400px;
+    border: 1 solid black
+}
+
+#MainContent
+{
+ position:relative;    
+ height:auto;
+}
+
+#examples
+{
+    width: auto;
+    height: auto;
+    clear: both;
+}
+
+#examplesTable
+{
+    width: 100%;
+}
+
+#examplesTable
+{
+    border: 0px;
+}
+
+#examplesTable td
+{
+    border: 0px;
+}
+
+#examplesTable tr
+{
+    border: 0px;
+}
+
+.DownloadItem
+{
+    display:inline;
+}
+
+#StateMachineTools
+{
+    display:inline;
+    float:right;
+    margin-top:32px;
+    margin-left:10px;
+   
+}

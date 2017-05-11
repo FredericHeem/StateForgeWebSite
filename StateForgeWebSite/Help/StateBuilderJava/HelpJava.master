@@ -1,0 +1,37 @@
+﻿<%@ Master Language="C#" MasterPageFile="/Help/Help.master" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="TitleContent" runat="server">
+    <asp:ContentPlaceHolder ID="TitleContent" runat="server" />
+</asp:Content>
+<asp:Content ID="Content4" ContentPlaceHolderID="HeaderTitle" runat="server">
+    StateBuilderJava - state machine code generator for Java
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="MetaInfo" runat="server">
+    <asp:ContentPlaceHolder ID="MetaInfo" runat="server" />
+</asp:Content>
+<asp:Content ID="Content5" ContentPlaceHolderID="HeaderEpilogue" runat="server">
+    <asp:ContentPlaceHolder ID="HeaderEpilogue" runat="server" />
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="NavMain" runat="server">
+    <div id="navigation">
+        <ul id="browser">
+            <li><span><a href="../state-machine-tools.aspx">Help Home</a></span></li>
+            <li><span><a href="statebuilderjava-state-machine-generator.aspx">Welcome</a></span></li>
+            <li><span><a href="../state-machine-features.aspx">Features</a></span></li>
+
+            <li><span><a href="install-statebuilderjava.aspx">Install</a></span></li>
+            <li><span><a href="tutorial-state-machine-builder-java.aspx">Tutorial</a></span></li>
+            <li><span>Build examples</span>
+                <ul>
+                    <li><a href="build-state-machine-examples-java-maven.aspx">Maven</a></li>
+                    <li><a href="build-state-machine-examples-java-ant.aspx">Ant</a></li>
+                </ul>
+            </li>
+            <li><span><a href="state-machine-examples-java.aspx">Examples</a></span></li>
+            <li><span><a href="context-statebuilderjava.aspx">Context</a></span></li>
+        </ul>
+    </div>
+    <div id="main">
+        <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+    </div>
+</asp:Content>

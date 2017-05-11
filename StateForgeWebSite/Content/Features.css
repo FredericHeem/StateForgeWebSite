@@ -1,0 +1,100 @@
+﻿#featuresTabView
+{
+    position:relative;
+    padding-left: 12em;
+    padding-right: 1em;
+    padding-bottom:0px;
+    width: auto;
+    vertical-align: middle;
+}
+
+#featuresTabView .yui-content
+{
+    height: 800px;
+    padding: 0;
+    margin: 0;
+    border: 1px solid;
+    border-color: #8C96B3;
+}
+#featuresTabView .yui-nav
+{
+    height: 396px;
+    width: 12em;
+    padding: 0;
+    margin:0;
+    font-weight: bold;
+    border-width: 0 1px 0 0;
+    border-color: #8C96B3;
+}
+
+#featuresTabView .yui-nav li
+{
+    /*background-image: none !important;
+    background: transparent;   */
+    padding-left: 0px !important;
+    border-width: 1px 0 1px 1px !important;
+    border-style: solid;
+    border-color: #8C96B3;
+    height: 36px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 2px;
+}
+
+#featuresTabView em
+{
+    padding-right: 4px;
+    padding-left: 4px;
+    vertical-align: middle;
+    left: 0px !important;
+    border-style: none !important;
+    padding: 2px;
+    margin: 0;
+}
+
+#featuresTabView a
+{
+    /*background: #C0D2E4;*/
+    border-style: none !important;
+    padding: 0;
+}
+
+#featuresTabView .selected a
+{
+    background:#2647a0;
+}
+
+#featuresTabView a:hover
+{
+    background: #39508C;
+}
+
+#featuresTabView img
+{
+    border: none;
+    padding-right: 0.5em;
+    vertical-align: middle;
+}
+
+#featuresTabView .yui-content ul
+{
+    padding: 10px !important;
+    margin-left:15px !important;
+}
+
+#featuresTabView .yui-content li
+{
+    padding: 1px !important;
+    border: 1 solid black !important;
+}
+
+#HierarchicalStateMachine, #ConcurrentStateMachine
+{
+    display:block;
+    margin:0 auto;
+}
+
+p 
+{
+    margin-left:10px;
+}

@@ -1,0 +1,68 @@
+﻿<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<script runat="server">
+    protected void Page_Load(object sender, EventArgs e)
+    {
+    }
+</script>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>
+        <asp:ContentPlaceHolder ID="TitleContent" runat="server" />
+    </title>
+    <asp:ContentPlaceHolder ID="MetaInfo" runat="server" />
+    <meta name="author" content="Frederic Heem" />
+    <link href="/Content/Help.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/Content/js/jquery-ui/js/jquery-1.6.2.min.js"></script>
+    <script type="text/javascript" src="/Content/js/jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+    <link type="text/css" href="/Content/js/jquery-ui/css/cupertino/jquery-ui-1.8.16.custom.css"
+        rel="stylesheet" />
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-24274725-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+    <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+    <asp:ContentPlaceHolder ID="HeaderEpilogue" runat="server" />
+</head>
+<body>
+    <div class="page">
+        <div id="header">
+            <div id="fbRecommend">
+                <g:plusone size="medium" count="false"></g:plusone>
+            </div>
+            <img id="logo" alt="StateForge" src="/Content/Images/StateForgeLogo.png" />
+            <div id="title">
+                <h1>
+                    StateForge</h1>
+                <h3>
+                    <asp:ContentPlaceHolder ID="HeaderTitle" runat="server" />
+                </h3>
+            </div>
+            <div id="menucontainer">
+                <ul id="menu">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/Home/Download">Downloads</a></li>
+                    <li><a href="/Help/state-machine-tools.aspx">Help</a></li>
+                    <li><a href="/Home/Faq">F.A.Q</a></li>
+                    <li><a href="/Home/About">Contact us</a></li>
+                </ul>
+            </div>
+        </div>
+        <asp:ContentPlaceHolder ID="NavMain" runat="server" />
+        <div id="footer">
+            <p>
+                Copyright &copy; 2011-2015 StateForge.</p>
+            
+        </div>
+    </div>
+</body>
+</html>

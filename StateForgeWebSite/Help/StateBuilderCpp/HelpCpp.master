@@ -1,0 +1,50 @@
+﻿<%@ Master Language="C#" MasterPageFile="/Help/Help.master" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="TitleContent" runat="server">
+    <asp:ContentPlaceHolder ID="TitleContent" runat="server" />
+</asp:Content>
+<asp:Content ID="Content4" ContentPlaceHolderID="HeaderTitle" runat="server">
+    StateBuilderCpp - state machine code generator for C++
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="MetaInfo" runat="server">
+    <asp:ContentPlaceHolder ID="MetaInfo" runat="server" />
+</asp:Content>
+<asp:Content ID="Content5" ContentPlaceHolderID="HeaderEpilogue" runat="server">
+    <asp:ContentPlaceHolder ID="HeaderEpilogue" runat="server" />
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="NavMain" runat="server">
+    <div id="navigation">
+        <ul id="browser">
+            <li><span><a href="../state-machine-tools.aspx">Help Home</a></span></li>
+            <li><span><a href="statebuildercpp-state-machine-generator.aspx">Welcome</a></span></li>
+            <li><span><a href="../state-machine-features.aspx">Features</a></span></li>
+            <li><span>Installation</span>
+                <ul>
+                    <li><span class="windows-16"><a href="install-statebuildercpp-windows.aspx">Windows</a></span>
+                        <ul>
+                            <li><span><a href="setup-statebuildercpp-build-qt-windows.aspx">Qt setup</a></span></li>
+                            <li><span><a href="setup-statebuildercpp-build-boost-windows.aspx">Boost setup</a></span></li>
+                        </ul>
+                    </li>
+                    <li><span class="linux-16"><a href="install-statebuildercpp-linux.aspx">Linux</a></span></li>
+                    <li><span class="osx-16"><a href="install-statebuildercpp-osx.aspx">Mac OSX</a></span></li>
+                </ul>
+            </li>
+            <li><span>Build examples</span>
+                <ul>
+                    <li><span class="windows-16"><a href="build-examples-statebuildercpp-windows.aspx">Windows</a></span>
+                    </li>
+                    <li><span class="linux-16"><a href="build-examples-statebuildercpp-linux.aspx">Linux</a></span></li>
+                    <li><span class="osx-16"><a href="build-examples-statebuildercpp-macosx.aspx">Mac OSX</a></span></li>
+                    <li><span class="android-16"><a href="build-examples-statebuildercpp-android.aspx">Android</a></span></li>
+                </ul>
+            </li>
+            <li><span><a href="tutorial-state-machine-builder-cpp.aspx">Tutorial</a></span></li>
+            <li><span><a href="state-machine-examples-cplusplus.aspx">Examples</a></span></li>
+            <li><span><a href="context-statebuildercpp.aspx">Context</a></span></li>
+        </ul>
+    </div>
+    <div id="main">
+        <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+    </div>
+</asp:Content>

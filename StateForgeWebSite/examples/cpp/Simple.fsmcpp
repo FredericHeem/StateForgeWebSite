@@ -1,0 +1,29 @@
+<sm:StateMachine xmlns:sm="http://www.stateforge.com/StateMachineCpp-v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.stateforge.com/StateMachineCpp-v1                                      http://www.stateforge.com/xsd/StateMachineCpp-v1.xsd">
+    <!-- General settings -->
+    <settings asynchronous="false" library="std">
+        <object instance="action" class="Action" include="Action.h"/>
+    </settings>
+    <!-- Events -->
+    <events>
+        <eventSource name="MainEvent">
+            <event id="evStart"/>
+            <event id="evSetSpeed" name="evSetSpeed"/>
+            <event id="evHalt" name="evHalt"/>
+        </eventSource>
+    </events>
+    <!-- States -->
+    <state name="Root">
+        <state name="Idle">
+            <transition event="evStart" nextState="Start"/>
+        </state>
+        <state name="Start">
+            <transition event="evHalt" nextState="Stop"/>
+            <transition event="evSetSpeed" nextState="ChangeSpeed"/>
+        </state>
+        <state name="ChangeSpeed">
+            <transition event="evSetSpeed" nextState="ChangeSpeed"/>
+            <transition event="evHalt" nextState="Stop"/>
+        </state>
+        <state name="Stop" kind="final"/>
+    </state>
+</sm:StateMachine>

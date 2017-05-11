@@ -1,0 +1,39 @@
+﻿<%@ Master Language="C#" MasterPageFile="/Help/Help.master" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="TitleContent" runat="server">
+    <asp:ContentPlaceHolder ID="TitleContent" runat="server" />
+</asp:Content>
+<asp:Content ID="Content4" ContentPlaceHolderID="HeaderTitle" runat="server">
+    State machine code generator
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="MetaInfo" runat="server">
+    <asp:ContentPlaceHolder ID="MetaInfo" runat="server" />
+</asp:Content>
+<asp:Content ID="Content5" ContentPlaceHolderID="HeaderEpilogue" runat="server">
+    <asp:ContentPlaceHolder ID="HeaderEpilogue" runat="server" />
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="NavMain" runat="server">
+    <div id="navigation">
+        <ul id="browser">
+            <li><span><a href="state-machine-tools.aspx">Welcome</a></span></li>
+            <li><span><a href="state-machine-features.aspx">Features</a></span>
+                <ul>
+                    <li><a href="hierarchical-state-machine.aspx">Hierarchical</a></li>
+                    <li><a href="state-machine-entry-exit.aspx">Entry Exit</a></li>
+                    <li><a href="state-machine-transition.aspx">Transition</a></li>
+                    <li><a href="state-machine-events.aspx">Events</a></li>
+                    <li><a href="concurrent-state-machine.aspx">Concurrent</a></li>
+                    <li><a href="asynchronous-state-machine.aspx">Asynchronous</a></li>
+                    <li><a href="state-machine-timers.aspx">Timers</a></li>
+                    <li><a href="state-machine-observer.aspx">Observer</a></li>
+                </ul>
+            </li>
+            <li><span><a href="StateBuilderCpp/statebuildercpp-state-machine-generator.aspx">StateBuilderCpp</a></span></li>
+            <li><span><a href="StateBuilderDotNet/statebuilderdotnet-state-machine-generator.aspx">StateBuilderDotNet</a></span></li>
+            <li><span><a href="StateBuilderJava/statebuilderjava-state-machine-generator.aspx">StateBuilderJava</a></span></li>
+        </ul>
+    </div>
+    <div id="main">
+        <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+    </div>
+</asp:Content>

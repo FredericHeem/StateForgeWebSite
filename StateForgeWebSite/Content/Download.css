@@ -1,0 +1,47 @@
+﻿#DownloadTable
+{
+    width: 100%;
+}
+
+.Version, .Date, .SystemRequirements, .OS, .Compilers, .Suggests
+{
+    font-weight: bold;
+    font-style: italic;
+}
+
+.download-win
+{
+    background-image: url(/Content/Images/ico-win.png);
+    
+}
+.download-github
+{
+    background-image: url(/Content/Images/github.png);
+    
+}
+
+.download-linux
+{
+    background-image: url(/Content/Images/ico-tux.png);
+}
+
+.download-osx
+{
+    background-image: url(/Content/Images/ico-osx.png);
+}
+
+.download-osx, .download-win, .download-linux, .download-github
+{
+    background-repeat: no-repeat;
+    /*padding: 0px 8px px 24px;*/
+    padding-left:24px;
+    margin:4px;
+    display:block;
+    vertical-align:top;
+    height:16px;
+}
+
+#downloadTabView .yui-content
+{
+    padding:10px;
+}

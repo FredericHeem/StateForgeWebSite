@@ -1,0 +1,488 @@
+﻿body
+{
+    font-size: .75em;
+    font-family: Verdana, Helvetica, Sans-Serif;
+    margin: 0;
+    padding: 0;
+    color: #696969;
+    background-repeat: repeat;
+    background-color: white;
+}
+
+a:link
+{
+    color: #034af3;
+    text-decoration: underline;
+}
+a:visited
+{
+    color: #505abc;
+}
+a:hover
+{
+    color: #1d60ff;
+    text-decoration: none;
+}
+a:active
+{
+    color: #12eb87;
+}
+
+p, ul
+{
+    margin-top: 4px;
+    margin-bottom: 10px;
+    line-height: 1.6em;
+}
+
+ul
+{
+    padding-left: 20px;
+}
+
+p
+{
+    margin-left: 16px;
+}
+
+/* HEADINGS   
+----------------------------------------------------------*/
+h1, h2, h3, h4, h5, h6
+{
+    font-size: 1.5em;
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1
+{
+    font-size: 2em;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+h2
+{
+    padding: 0 0 0px 0;
+    margin: 0px;
+}
+h3
+{
+    font-size: 1.2em;
+}
+h4
+{
+    font-size: 1.1em;
+    margin: 12px;
+}
+h5, h6
+{
+     margin: 16px;
+    font-size: 1em;
+}
+
+/* this rule styles <h2> tags that are the 
+first child of the left and right table columns */
+.rightColumn > h1, .rightColumn > h2, .leftColumn > h1, .leftColumn > h2
+{
+    margin-top: 0;
+}
+
+/* PRIMARY LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+
+/* you can specify a greater or lesser percentage for the 
+page width. Or, you can specify an exact pixel width. */
+.page
+{
+    width: auto; /*height:800px;*/
+    margin: 0px auto 0px auto;
+}
+
+#header
+{
+    margin: 0px;
+    padding: 0px;
+    background: tranparent;
+    width: 100%;
+    height: 120px;
+    position: relative;
+}
+
+#logo
+{
+    margin-top: 4px;
+    float: left;
+}
+
+#title
+{
+    width: auto;
+    padding-top: 10px;
+    padding-left: 100px;
+    text-align: left;
+}
+
+#title h1
+{
+    font-weight: 700;
+    margin: 0px;
+    color: #29297C;
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+#title h3
+{
+    margin: 0px;
+    color: #29297C;
+    font-size: 1.5em;
+}
+
+#main
+{
+    margin-bottom: 10px;
+    _height: 1px; /* only IE6 applies CSS properties starting with an underscore */ /*height:600px;*/
+    float: left;
+    width: auto;
+    width: 800px;
+    min-height: 600px;
+}
+
+#navigation
+{
+    width: 150px;
+    float: left; /*width: 15em;*/
+}
+
+#footer
+{
+    width: 100%;
+    clear: both;
+    color: #696969;
+    padding: 0px 0;
+    text-align: center; /*line-height: normal;*/
+    margin: 0 auto;
+    font-size: .9em;
+    padding-bottom: 10px;
+}
+
+#footer p
+{
+    margin: 0;
+}
+
+#footer hr
+{
+    height: 1px;
+}
+/* TAB MENU   
+----------------------------------------------------------*/
+ul#menu
+{
+    padding: 0 0 0 0;
+    margin: 0;
+    text-align: right;
+    float: right;
+    bottom: 0;
+}
+
+ul#menu li
+{
+    display: inline;
+    list-style: none;
+    float: left;
+    padding-left: 2px;
+    padding-right: 2px;
+    margin-left: 4px;
+    padding: 8px;
+    position: relative; /*-moz-border-radius-topright: 15px;
+    -moz-border-radius-topleft: 15px;
+    -webkit-border-top-right-radius: 15px;
+    -webkit-border-top-left-radius: 15px;
+    border-radius: 15px 15px 0 0;*/
+    background-color: #CCFFFF;
+}
+
+ul#menu li a
+{
+    margin: 0;
+    bottom: 0;
+    padding: 8px 10px;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: transparent;
+    color: black;
+}
+
+ul#menu li:hover
+{
+    background-color: #fff;
+    text-decoration: none;
+    background-color: #99CCFF;
+    background: -moz-linear-gradient(top,                                       #1ba7c3 10%,                                      #36c9ea 70%,                                      #51f3ff 100%);
+    background: -webkit-gradient(linear,                                  left top,                                  left bottom,                                  color-stop(0.1, #1ba7c3),                                  color-stop(0.7, #36c9ea),                                  color-stop(1, #51f3ff));
+    -pie-background: linear-gradient(top,                                        #1ba7c3 10%,                                       #36c9ea 70%,                                       #51f3ff 100%);
+}
+
+ul#menu li:active
+{
+    background-color: #a6e2a6;
+    text-decoration: none;
+    background: -webkit-gradient(         linear,         left bottom,         left top,         color-stop(0.1, rgb(0,12,179)),         color-stop(0.7, rgb(59,69,255)),         color-stop(1, rgb(79,88,255)));
+    background: -moz-linear-gradient(         center bottom,         rgb(0,12,179) 10%,         rgb(59,69,255) 70%,         rgb(79,88,255) 100%);
+    -pie-background: linear-gradient(top,                                       rgb(0,12,179) 10%,                                      rgb(59,69,255) 70%,                                      rgb(79,88,255) 100%); /*behavior: url(../../Content/PIE/PIE.htc);*/
+}
+
+ul#menu li.selected a
+{
+    background-color: #fff;
+    color: #000;
+}
+
+/* FORM LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+
+fieldset
+{
+    margin: 1em 0;
+    padding: 1em;
+    border: 1px solid #CCC;
+}
+
+fieldset p
+{
+    margin: 2px 12px 10px 10px;
+}
+
+legend
+{
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 2px 4px 8px 4px;
+}
+
+input[type="text"]
+{
+    width: 200px;
+    border: 1px solid #CCC;
+}
+
+input[type="password"]
+{
+    width: 200px;
+    border: 1px solid #CCC;
+}
+
+/* TABLE
+----------------------------------------------------------*/
+
+table
+{
+    border: solid 1px #e8eef4;
+    border-collapse: collapse;
+}
+
+table td
+{
+    padding: 5px;
+    border: solid 1px #e8eef4;
+    vertical-align: top;
+}
+
+table th
+{
+    padding: 6px 5px;
+    text-align: left;
+    background-color: #C0D2E4;
+    color: #000000;
+    border: solid 1px #C0D2E4;
+}
+
+/* MISC  
+----------------------------------------------------------*/
+.clear
+{
+    clear: both;
+}
+
+.error
+{
+    color: Red;
+}
+
+#menucontainer
+{
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+}
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error
+{
+    color: #ff0000;
+}
+
+.field-validation-valid
+{
+    display: none;
+}
+
+.input-validation-error
+{
+    border: 1px solid #ff0000;
+    background-color: #ffeeee;
+}
+
+.validation-summary-errors
+{
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.validation-summary-valid
+{
+    display: none;
+}
+
+/* Styles for editor and display helpers
+----------------------------------------------------------*/
+.display-label, .editor-label, .display-field, .editor-field
+{
+    margin: 0.5em 0;
+}
+
+.text-box
+{
+    width: 30em;
+}
+
+.text-box.multi-line
+{
+    height: 6.5em;
+}
+
+.tri-state
+{
+    width: 6em;
+}
+
+#fbRecommend
+{
+    width: auto;
+    height: auto;
+    float: right;
+    vertical-align: top;
+    position: relative;
+    margin: 10px;
+}
+
+.file
+{
+    font-style: italic;
+}
+
+.application
+{
+    font-style: italic;
+}
+
+.envvar
+{
+    font: Consolas;
+    font-weight: bolder;
+}
+
+.command
+{
+    margin: 6px;
+    padding: 4px;
+    
+    font-size: 13px;
+}
+
+.code
+{
+    font-family: Consolas;
+    color: #29297C;
+}
+
+.header-windows
+{
+    background-image: url(/Content/Images/Windows-icon.png);
+}
+
+.header-linux
+{
+    background-image: url(/Content/Images/Linux-icon.png);
+}
+
+.header-osx
+{
+    background-image: url(/Content/Images/Apple-Grey-icon.png);
+}
+
+.header-ubuntu
+{
+    background-image: url(/Content/Images/Ubuntu-icon.png);
+}
+
+.header-redhat
+{
+    background-image: url(/Content/Images/Apps-redhat-icon.png);
+}
+
+.header-windows, .header-linux, .header-osx, .header-redhat, .header-ubuntu
+{
+    background-repeat: no-repeat;
+    padding-left: 32px;
+    margin: 4px;
+    display: block;
+    line-height: 32px;
+    vertical-align: middle;
+    height: 32px;
+}
+
+.windows-16
+{
+    background-image: url(/Content/Images/Windows-icon-16.png);
+}
+
+.linux-16
+{
+    background-image: url(/Content/Images/Linux-icon-16.png);
+}
+
+.osx-16
+{
+    background-image: url(/Content/Images/Apple-Grey-icon-16.png);
+}
+
+.android-16
+{
+    background-image: url(/Content/Images/Android-ico-16.png);
+}
+
+.windows-16, .linux-16, .osx-16, .android-16
+{
+    background-repeat: no-repeat;
+    padding-left: 18px;
+    margin: 4px;
+    display: block;
+    line-height: 16px;
+    vertical-align: middle;
+    height: 16px;
+}
+
+img
+{
+    vertical-align: middle;
+    margin: 4px;
+}
+
+#browser
+{
+    /*font-family: Verdana, helvetica, arial, sans-serif;             font-size: 68.75%;*/
+    background-color: White;
+}
